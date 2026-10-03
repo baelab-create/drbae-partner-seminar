@@ -375,6 +375,39 @@ table.t td .pi{background:#fff;border-radius:.4em;padding:.15em .3em;box-shadow:
 .flow.grid7 .step.total{background:var(--navy);box-shadow:var(--neu-out);}
 .flow.grid7 .step.total h3{color:#fff;} .flow.grid7 .step.total p{color:#CFC9BC;}
 .flow.grid7 .step.total .n{background:var(--key);color:#fff;box-shadow:none;font-size:.8em;}
+
+/* ---- 공인 파트너 구성도 ---- */
+.ptn{flex:1;min-height:0;display:flex;flex-direction:column;gap:1em;margin-top:.8em;}
+.ptn-main{flex:1;min-height:0;display:flex;flex-direction:column;background:var(--neu-bg);border-radius:1.4em;box-shadow:var(--neu-out);padding:.9em 1.3em 1.1em;}
+.ptn-group{font-size:.85em;color:var(--sub);font-weight:600;}
+.ptn-group span{display:inline-block;font-size:.8em;font-weight:900;letter-spacing:.16em;color:#fff;background:var(--navy);border-radius:99em;padding:.25em .9em;margin-right:.7em;}
+.ptn-tree{flex:1;min-height:0;display:flex;align-items:stretch;gap:0;margin-top:.8em;}
+.pc{position:relative;display:flex;flex-direction:column;min-height:0;background:var(--neu-bg);border-radius:1.1em;box-shadow:var(--neu-out-sm);padding:.5em;}
+.pc .ph{flex:1;min-height:0;border-radius:.8em;overflow:hidden;background:#fff;}
+.pc .ph img{width:100%;height:100%;object-fit:contain;object-position:center bottom;display:block;}
+.pc figcaption{text-align:center;padding:.45em .2em .1em;line-height:1.3;}
+.pc figcaption em{display:block;font-style:normal;font-size:.75em;font-weight:800;color:var(--taupe);letter-spacing:.04em;}
+.pc figcaption b{font-size:.92em;color:var(--navy);}
+.pc.lead{flex:0 0 22%;}
+.pc.lead figcaption em{color:var(--navy);}
+.ptn-link{flex:0 0 2.2em;position:relative;}
+.ptn-link i{position:absolute;left:0;right:0;top:50%;height:.18em;background:var(--taupe);opacity:.5;border-radius:1em;}
+.ptn-branches{flex:1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1em;position:relative;}
+.ptn-branches::before{content:"";position:absolute;left:-.1em;top:12%;bottom:12%;width:.18em;background:var(--taupe);opacity:.5;border-radius:1em;}
+.pc.star{box-shadow:var(--neu-out),0 0 0 .2em var(--key);}
+.pc.star figcaption em{color:var(--key);}
+.pc .badge{position:absolute;z-index:2;top:.9em;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:.68em;font-weight:900;letter-spacing:.06em;color:#fff;background:var(--key);border-radius:99em;padding:.3em .9em;box-shadow:0 .2em .6em rgba(179,40,30,.35);}
+.ptn-sub{flex:0 0 auto;display:flex;align-items:center;gap:.9em;}
+.ptn-sub-h{flex:0 0 auto;font-size:.75em;font-weight:900;letter-spacing:.1em;color:var(--taupe);writing-mode:horizontal-tb;width:5.5em;line-height:1.3;}
+.ptn-sub figure{flex:1;display:flex;align-items:center;gap:.6em;background:var(--neu-bg);border-radius:1em;box-shadow:var(--neu-out-sm);padding:.4em .6em;min-width:0;}
+.ptn-sub img{flex:0 0 auto;height:4.2em;width:auto;aspect-ratio:560/600;object-fit:contain;background:#fff;border-radius:.6em;}
+.ptn-sub figcaption{font-size:.72em;color:var(--sub);line-height:1.35;min-width:0;}
+.ptn-sub figcaption b{display:block;color:var(--navy);font-size:1.08em;}
+.pc .badge.navy{background:var(--navy);box-shadow:0 .2em .6em rgba(31,58,92,.35);}
+.pc.lead{box-shadow:var(--neu-out),0 0 0 .2em var(--navy);}
+.ptn-link i,.ptn-branches::before{opacity:.9;background:var(--navy);}
+.ptn-foot{font-size:.82em;color:var(--sub);margin-top:.7em;}
+.ptn-foot b{color:var(--navy);}
 </style>
 </head>
 <body>
@@ -1039,20 +1072,29 @@ table.t td .pi{background:#fff;border-radius:.4em;padding:.15em .3em;box-shadow:
 <section class="slide" data-ch="06 전문점 안내">
   <div class="eyebrow">CERTIFIED PARTNERS</div>
   <h2>전국 닥터배 공인 파트너 9인</h2>
-  <div class="body">
-    <div class="partners">
+  <div class="ptn">
+    <div class="ptn-main">
+      <div class="ptn-group"><span>MICRO BLACK &amp; RED</span>마이크로블랙&amp;레드 — 총괄 대표가 3개 지점을 관리합니다</div>
+      <div class="ptn-tree">
+        <figure class="pc lead"><span class="badge navy">총괄 · 3개 지점 관리</span><div class="ph"><img src="assets/partners/microblack-official.jpg" alt=""></div><figcaption><em>총괄 대표</em><b>마이크로블랙&amp;레드</b></figcaption></figure>
+        <div class="ptn-link"><i></i></div>
+        <div class="ptn-branches">
+          <figure class="pc star"><span class="badge">TODAY · 세미나 진행</span><div class="ph"><img src="assets/partners/microred-cheongdam.jpg" alt=""></div><figcaption><em>서울 청담</em><b>마이크로블랙&amp;레드</b></figcaption></figure>
+          <figure class="pc star"><span class="badge">TODAY · 세미나 진행</span><div class="ph"><img src="assets/partners/fillinskin-gwangju.jpg" alt=""></div><figcaption><em>광주 전남 · 필인스킨</em><b>마이크로블랙&amp;레드</b></figcaption></figure>
+          <figure class="pc"><div class="ph"><img src="assets/partners/micro-daegu.jpg" alt=""></div><figcaption><em>대구 경북</em><b>마이크로블랙&amp;레드</b></figcaption></figure>
+        </div>
+      </div>
+    </div>
+    <div class="ptn-sub">
+      <div class="ptn-sub-h">전국 공인 파트너</div>
       <figure><img src="assets/partners/jpkorea-yangsan.jpg" alt=""><figcaption><b>쟌피오베르 양산점</b>부울경</figcaption></figure>
       <figure><img src="assets/partners/lohana-coskin.jpg" alt=""><figcaption><b>로하나코스킨</b>서울 강남구청</figcaption></figure>
       <figure><img src="assets/partners/kle-creed.jpg" alt=""><figcaption><b>클솔루션 클리드</b>서울 잠실</figcaption></figure>
       <figure><img src="assets/partners/misong-academy.jpg" alt=""><figcaption><b>미송 아카데미</b>대구 경북</figcaption></figure>
       <figure><img src="assets/partners/myon-skin.jpg" alt=""><figcaption><b>마이온 스킨 아카데미</b>서울 이대</figcaption></figure>
-      <figure><img src="assets/partners/microblack-official.jpg" alt=""><figcaption><b>마이크로블랙&amp;레드</b>총괄 대표</figcaption></figure>
-      <figure><img src="assets/partners/microred-cheongdam.jpg" alt=""><figcaption><b>마이크로블랙&amp;레드</b>서울 청담</figcaption></figure>
-      <figure class="me"><img src="assets/partners/fillinskin-gwangju.jpg" alt=""><figcaption><b>마이크로블랙&amp;레드</b>광주 전남 · 필인스킨</figcaption></figure>
-      <figure><img src="assets/partners/micro-daegu.jpg" alt=""><figcaption><b>마이크로블랙&amp;레드</b>대구 경북</figcaption></figure>
     </div>
-    <div class="callout">마이크로젝션은 <b>공인 파트너의 교육과 멘토링</b>을 마치신 뒤 납품됩니다. 기기는 한 번 사는 것으로 끝나지 않습니다 — 도입 후에도 물어볼 곳이 분명합니다. 스킨부스터는 데모 테스트 후 교육 없이 입점 가능합니다.</div>
   </div>
+  <p class="ptn-foot">마이크로젝션은 <b>공인 파트너의 교육과 멘토링</b>을 마치신 뒤 납품됩니다 · 스킨부스터는 데모 테스트 후 교육 없이 입점 가능</p>
 </section>
 
 <section class="slide" data-ch="06 전문점 안내">
