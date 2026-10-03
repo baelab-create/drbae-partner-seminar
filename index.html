@@ -151,6 +151,31 @@
   .partners figure.me{border:.18em solid var(--red);}
   .cmp-row{display:grid;grid-template-columns:1fr 1fr;gap:1.1em;margin-top:1.4em;}
   .sec-num{font-size:7em;font-weight:900;color:rgba(255,255,255,.08);position:absolute;right:.6em;bottom:-.15em;line-height:1;}
+
+  .fit{font-size:calc(1em * var(--k,1));}
+
+  /* 파트너 9인 — 5 + 4 두 줄 배치 */
+  .partners{display:flex;flex-wrap:wrap;justify-content:center;gap:1em 1.2em;margin-top:1.2em;}
+  .partners figure{width:calc((100% - 4*1.2em)/5);}
+  .partners img{aspect-ratio:auto;height:8.5em;width:100%;object-fit:cover;object-position:top;}
+  .partners figcaption{font-size:.85em;}
+  /* 디바이스 카드 — 사진 위, 설명 아래 */
+  .cmp-row.dev{align-items:stretch;}
+  .cmp-row.dev .prodcard{flex-direction:column;align-items:stretch;text-align:left;}
+  .cmp-row.dev .prodcard .pimg{flex:none;width:100%;height:11em;}
+  .flow.grid7{display:grid;grid-template-columns:repeat(4,1fr);gap:.8em;}
+  .flow.grid7 .arrow{display:none;}
+  .flow.grid7 .step{flex-direction:column;}
+
+  .ba{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2em;margin-top:1.2em;flex:1;min-height:0;}
+  .ba .pair{background:#fff;border:1px solid var(--line);border-radius:1em;padding:.8em;display:flex;flex-direction:column;min-height:0;}
+  .ba .imgs{display:grid;grid-template-columns:1fr 1fr;gap:.5em;flex:1;min-height:0;}
+  .ba figure{position:relative;min-height:0;border-radius:.6em;overflow:hidden;background:#111;}
+  .ba img{width:100%;height:100%;object-fit:cover;display:block;}
+  .ba figcaption{position:absolute;left:.4em;top:.4em;font-size:.72em;font-weight:800;letter-spacing:.08em;color:#fff;background:rgba(14,42,71,.85);border-radius:.4em;padding:.2em .6em;}
+  .ba figure.after figcaption{background:var(--gold-ink);}
+  .ba .cap{font-size:.88em;color:var(--sub);margin-top:.6em;text-align:center;}
+  .ba .cap b{color:var(--navy);}
 </style>
 </head>
 <body>
@@ -270,6 +295,22 @@
     <div class="card"><div class="num">3</div><h3>‘전달’이 핵심인 카테고리</h3><p>스킨부스터는 <b>적극적으로 고르게 전달</b>해야 의미가 있습니다. 성분만큼 도포 방식이 중요합니다.</p></div>
   </div></div>
 </section>
+<section class="slide" data-ch="01 닥터배 · 배랩">
+  <div class="eyebrow">SKIN LONGEVITY</div>
+  <h2>병원은 의료 영역, 관리실은 각질층 수준의 화장품 관리</h2>
+  <div class="split wide">
+    <div class="imgbox"><img src="assets/ba/why-skinbooster.jpg" alt="스킨 롱제비티 — 병원과 관리실"></div>
+    <div>
+      <p class="kicker">서로 대체하는 관계가 아닙니다. 닥터배가 하는 것은 <b>화장품 범위의 관리</b>입니다.</p>
+      <ul class="pts">
+        <li><b>높은 활성 함량</b> — 블루는 전성분 47종 중 절반 이상이 활성 원료</li>
+        <li><b>정제된 원료</b> — 병풀 세포외소포를 연구실이 직접 분리 · 정제</li>
+        <li><b>싱글 유즈</b> — 5ml 유리 바이알 단회용 밀봉, 고객 앞에서 새 병 개봉</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 
 <section class="slide" data-ch="01 닥터배 · 배랩">
   <div class="eyebrow">THE GAP</div>
@@ -464,6 +505,30 @@
       <div class="callout" style="font-size:.85em">💡 “지금은 장벽을 세우는 단계, 회복되면 부스터 관리로” — <b>A→B 전환이 곧 업셀링 동선</b></div></div>
   </div>
 </section>
+<section class="slide" data-ch="03 마이크로젝션">
+  <div class="eyebrow">TROUBLED SKIN CARE</div>
+  <h2>문제성 피부는 ‘붓 도포 소프트케어’로 시작합니다</h2>
+  <div class="split wide">
+    <div class="imgbox cover"><img src="assets/ba/care-troubled.jpg" alt="붓 도포 관리"></div>
+    <div>
+      <ul class="pts">
+        <li>트러블 · 홍조 피부는 <b>마이크로젝션을 빼고</b> 붓 도포 · 이온토 · 갈바닉으로</li>
+        <li><b>블루 메인 부스팅 → 핑크 진정</b> — 원장님 후기 65건 중 가장 많이 쓰인 기본 골격</li>
+        <li>마지막 <b>토코포르테 에어건 쿨링</b>으로 3단 풀코스 업셀</li>
+        <li>장벽이 회복되면 B군 마이크로젝션 프리미엄으로 전환</li>
+      </ul>
+      <div class="callout">“지금은 장벽을 세우는 단계, 회복되면 부스터 관리로 올라갑니다” — 순서를 안내받은 고객이 프리미엄으로 이어집니다.</div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-ch="03 마이크로젝션">
+  <div class="eyebrow">CASE · TROUBLED SKIN</div>
+  <h2>문제성 피부 관리 사례 — 장벽을 먼저 세운 결과</h2>
+  <div class="ba"><div class="pair"><div class="imgs"><figure><img src="assets/ba/skin-ba-1-before.jpg" alt=""><figcaption>BEFORE</figcaption></figure><figure class="after"><img src="assets/ba/skin-ba-1-after.jpg" alt=""><figcaption>AFTER</figcaption></figure></div><div class="cap"><b>사례 1</b> · 볼</div></div><div class="pair"><div class="imgs"><figure><img src="assets/ba/skin-ba-2-before.jpg" alt=""><figcaption>BEFORE</figcaption></figure><figure class="after"><img src="assets/ba/skin-ba-2-after.jpg" alt=""><figcaption>AFTER</figcaption></figure></div><div class="cap"><b>사례 2</b> · 볼</div></div><div class="pair"><div class="imgs"><figure><img src="assets/ba/skin-ba-3-before.jpg" alt=""><figcaption>BEFORE</figcaption></figure><figure class="after"><img src="assets/ba/skin-ba-3-after.jpg" alt=""><figcaption>AFTER</figcaption></figure></div><div class="cap"><b>사례 3</b> · 볼</div></div></div>
+  <div class="callout" style="margin-top:.9em">A군 프로그램(블루 · 핑크 소프트케어, 마이크로젝션 미적용)으로 장벽을 정돈한 현장 사례입니다. 관리 전후 외관 비교이며 <b>개인차가 있습니다.</b></div>
+</section>
+
 
 <section class="slide" data-ch="03 마이크로젝션">
   <div class="eyebrow">STANDARD PROTOCOL</div>
@@ -538,6 +603,27 @@
   </div>
   <div class="callout">홈케어 — 마이크로블랙 두피 샴푸 + 스칼프 부스터(leave-on)로 <b>재방문 사이를 채우는 리테일 매출</b>까지 연결됩니다.</div></div>
 </section>
+<section class="slide" data-ch="03 마이크로젝션">
+  <div class="eyebrow">SCALP CARE</div>
+  <h2>헤어라인 · 가르마를 따라 수직으로 스탬핑</h2>
+  <div class="split wide">
+    <div class="imgbox cover"><img src="assets/ba/care-scalp.jpg" alt="두피 마이크로젝션"></div>
+    <div>
+      <div class="step"><div class="n">1</div><div><h3>프리워시 · 스티머</h3><p>마이크로블랙 샴푸 → 스칼프 부스터 스티머로 각질 정돈</p></div></div>
+      <div class="step" style="margin-top:.6em"><div class="n">2</div><div><h3>블랙 포 스칼프 바이알 오픈</h3><p>고객 앞 개봉 · 가르마 라인을 따라 도포</p></div></div>
+      <div class="step" style="margin-top:.6em"><div class="n">3</div><div><h3>마이크로젝션 스탬핑</h3><p>가르마 → 측두부 → 후두부 순서로 부드럽게</p></div></div>
+      <div class="step" style="margin-top:.6em"><div class="n">4</div><div><h3>토코포르테 에어건 피니시</h3><p>두피 · 목 · 헤어라인까지 쿨링 마무리</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-ch="03 마이크로젝션">
+  <div class="eyebrow">CASE · SCALP</div>
+  <h2>두피 관리 사례 — 마이크로젝션 스칼프 프로그램</h2>
+  <div class="ba"><div class="pair"><div class="imgs"><figure><img src="assets/ba/scalp-ba-1-before.jpg" alt=""><figcaption>BEFORE</figcaption></figure><figure class="after"><img src="assets/ba/scalp-ba-1-after.jpg" alt=""><figcaption>AFTER</figcaption></figure></div><div class="cap"><b>사례 1</b> · 정수리 가르마</div></div><div class="pair"><div class="imgs"><figure><img src="assets/ba/scalp-ba-2-before.jpg" alt=""><figcaption>BEFORE</figcaption></figure><figure class="after"><img src="assets/ba/scalp-ba-2-after.jpg" alt=""><figcaption>AFTER</figcaption></figure></div><div class="cap"><b>사례 2</b> · 정수리</div></div><div class="pair"><div class="imgs"><figure><img src="assets/ba/scalp-ba-3-before.jpg" alt=""><figcaption>BEFORE</figcaption></figure><figure class="after"><img src="assets/ba/scalp-ba-3-after.jpg" alt=""><figcaption>AFTER</figcaption></figure></div><div class="cap"><b>사례 3</b> · 이마 헤어라인</div></div></div>
+  <div class="callout" style="margin-top:.9em">블랙 포 스칼프 + 마이크로젝션 + 샴푸 · 스칼프 부스터 홈케어로 운영한 현장 사례입니다. 관리 전후 외관 비교이며 <b>개인차가 있습니다.</b></div>
+</section>
+
 
 <!-- ================= PART 04 · 광고 ================= -->
 <section class="slide dark" data-ch="04 광고 가이드">
@@ -687,7 +773,7 @@
 <section class="slide" data-ch="05 제품 라인업">
   <div class="eyebrow">DEVICE</div>
   <h2>디바이스 — 마이크로젝션 더마 스탬프 & 마이크로블랙 에어건</h2>
-  <div class="cmp-row" style="flex:1;align-items:center">
+  <div class="cmp-row dev" style="margin:auto 0">
     <div class="prodcard"><div class="pimg"><img src="assets/prod/stamp.webp" alt="더마 스탬프"></div><div>
       <div class="en">MICROJECTION DERMA STAMP</div><h3>마이크로젝션 더마 스탬프</h3>
       <dl><dt>용도</dt><dd>두피 + 피부 공용 · 1회용 · 5개 / 1BOX</dd><dt>구조</dt><dd>flat-tip 미세 돌출 · 앰플 바이알 직결합</dd><dt>납품</dt><dd>공인 파트너 교육 · 멘토링 이수 후</dd></dl></div></div>
@@ -700,7 +786,7 @@
 <section class="slide" data-ch="05 제품 라인업">
   <div class="eyebrow">STARTER PROGRAM</div>
   <h2>처음 도입하는 샵을 위한 기본 프로그램 7단계 (약 50~60분)</h2>
-  <div class="body"><div class="flow">
+  <div class="body"><div class="flow grid7">
     <div class="step"><div class="n">1</div><h3>클렌징 · 컨디션 체크</h3></div><div class="arrow">›</div>
     <div class="step"><div class="n">2</div><h3>소프트필</h3><p>리퀴드 마스크</p></div><div class="arrow">›</div>
     <div class="step"><div class="n">3</div><h3>부스팅</h3><p>블루 + 초음파 · 갈바닉</p></div><div class="arrow">›</div>
@@ -972,10 +1058,32 @@
     if (i === 0 || slides[i-1].dataset.ch !== s.dataset.ch) jump.add(new Option(s.dataset.ch, i));
   });
 
+
+  // 본문이 16:9 화면을 충분히 채우도록 글자 크기를 자동 조정
+  function fit(s){
+    if (s.classList.contains('img') || s.classList.contains('dark')) return;
+    const box = [...s.children].filter(c => /\b(body|split|cmp-row|partners)\b/.test(c.className));
+    if (!box.length) return;
+    box.forEach(b => b.classList.add('fit'));
+    const limit = () => { const r = s.getBoundingClientRect(); return r.bottom - parseFloat(getComputedStyle(s).paddingBottom) + 2; };
+    const over = () => {
+      const L = limit();
+      for (const b of box) for (const e of b.querySelectorAll('*')) {
+        const q = e.getBoundingClientRect(); if (q.height && q.bottom > L) return true;
+        if ((e.classList.contains('card') || e.classList.contains('prodcard') || e.classList.contains('step')) && e.scrollHeight > e.clientHeight + 2) return true;
+      }
+      return false;
+    };
+    let lo = 0.85, hi = 1.6;
+    for (let n = 0; n < 9; n++) { const m = (lo + hi) / 2; s.style.setProperty('--k', m); over() ? hi = m : lo = m; }
+    s.style.setProperty('--k', lo);
+    s.dataset.fit = innerWidth + 'x' + innerHeight;
+  }
   let cur = 0;
   function go(n) {
     cur = Math.max(0, Math.min(slides.length - 1, n));
     slides.forEach((s, i) => s.classList.toggle('on', i === cur));
+    const sc = slides[cur]; if (sc.dataset.fit !== innerWidth + 'x' + innerHeight) fit(sc);
     pg.textContent = `${cur + 1} / ${slides.length}`;
     bar.style.width = `${(cur + 1) / slides.length * 100}%`;
     [...jump.options].forEach(o => { if (+o.value <= cur) jump.value = o.value; });
@@ -1004,6 +1112,8 @@
   document.getElementById('fs').onclick = toggleFs;
   setTimeout(() => document.getElementById('hint').style.opacity = 0, 3500);
 
+  addEventListener('resize', () => fit(slides[cur]));
+  document.fonts?.ready.then(() => { slides.forEach(s => delete s.dataset.fit); fit(slides[cur]); });
   go((parseInt(location.hash.slice(1)) || 1) - 1);
 </script>
 </body>
