@@ -468,6 +468,17 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
 .fq-body{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;margin-top:.6em;}
 .fq-body .fa p{font-size:1.25em;}
 .fq-back{position:absolute;right:2.2em;top:5.6em;font:inherit;font-size:.78em;font-weight:800;color:var(--navy);background:var(--neu-bg);border:0;border-radius:99em;padding:.45em 1.1em;box-shadow:var(--neu-out-sm);cursor:pointer;z-index:4;}
+
+/* 비공개 띠 */
+.conf-bar{position:absolute;left:0;right:0;top:0;height:1.55em;background:#1F3A5C;color:#CFC9BC;font-size:.68em;display:flex;align-items:center;justify-content:center;letter-spacing:.04em;z-index:5;border-bottom:.12em solid var(--taupe);}
+.conf-bar b{color:#E8DEC8;margin-right:.5em;}
+.slide:not(.img){padding-top:4.1em;}
+.brand-logo{top:2.05em;}
+/* 가격 공유 · 노출 금지 */
+.no-share{position:absolute;top:2.35em;left:50%;transform:translateX(-50%);font-size:.72em;font-weight:900;letter-spacing:.08em;color:#fff;background:var(--key);border-radius:99em;padding:.3em 1.2em;box-shadow:0 .2em .6em rgba(179,40,30,.3);z-index:6;}
+.slide.price::after{content:"공유 · 노출 금지";position:absolute;right:-1em;bottom:3.5em;font-size:4.2em;font-weight:900;color:rgba(179,40,30,.06);transform:rotate(-12deg);pointer-events:none;white-space:nowrap;}
+/* 전후 사진 경고 */
+.ba-warn{display:inline-flex;align-items:center;gap:.5em;margin-top:.45em;font-size:.82em;font-weight:800;color:var(--key);background:#F6E9E4;border-radius:99em;padding:.3em 1em;box-shadow:var(--neu-in-sm);}
 </style>
 </head>
 <body>
@@ -716,8 +727,9 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
 <section class="slide" data-ch="02 마이크로젝션">
   <div class="eyebrow">CASE · TROUBLED SKIN</div>
   <h2>문제성 피부 관리 사례 — 장벽을 먼저 세운 결과</h2>
+  <div class="ba-warn">⚠ 관리 전후 외관 비교이며 개인차가 있습니다. 이 사진을 SNS에 그대로 올리지 마세요.</div>
   <div class="ba"><div class="pair"><div class="imgs"><figure><img src="assets/ba/skin-ba-1-before.jpg" alt=""><figcaption>BEFORE</figcaption></figure><figure class="after"><img src="assets/ba/skin-ba-1-after.jpg" alt=""><figcaption>AFTER</figcaption></figure></div><div class="cap"><b>사례 1</b> · 볼</div></div><div class="pair"><div class="imgs"><figure><img src="assets/ba/skin-ba-2-before.jpg" alt=""><figcaption>BEFORE</figcaption></figure><figure class="after"><img src="assets/ba/skin-ba-2-after.jpg" alt=""><figcaption>AFTER</figcaption></figure></div><div class="cap"><b>사례 2</b> · 볼</div></div><div class="pair"><div class="imgs"><figure><img src="assets/ba/skin-ba-3-before.jpg" alt=""><figcaption>BEFORE</figcaption></figure><figure class="after"><img src="assets/ba/skin-ba-3-after.jpg" alt=""><figcaption>AFTER</figcaption></figure></div><div class="cap"><b>사례 3</b> · 볼</div></div></div>
-  <div class="callout" style="margin-top:.9em">A군 프로그램(블루 · 핑크 소프트케어, 마이크로젝션 미적용)으로 장벽을 정돈한 현장 사례입니다. 관리 전후 외관 비교이며 <b>개인차가 있습니다.</b></div>
+  <div class="callout" style="margin-top:.9em">A군 프로그램(블루 · 핑크 소프트케어, 마이크로젝션 미적용)으로 장벽을 정돈한 현장 사례입니다. 관리 전후 외관 비교이며 <b>개인차가 있습니다. 이 사진을 SNS에 그대로 올리지 마세요.</b></div>
 </section>
 
 <section class="slide" data-ch="02 마이크로젝션">
@@ -811,8 +823,9 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
 <section class="slide" data-ch="02 마이크로젝션">
   <div class="eyebrow">CASE · SCALP</div>
   <h2>두피 관리 사례 — 마이크로젝션 스칼프 프로그램</h2>
+  <div class="ba-warn">⚠ 관리 전후 외관 비교이며 개인차가 있습니다. 이 사진을 SNS에 그대로 올리지 마세요.</div>
   <div class="ba"><div class="pair"><div class="imgs"><figure><img src="assets/ba/scalp-ba-1-before.jpg" alt=""><figcaption>BEFORE</figcaption></figure><figure class="after"><img src="assets/ba/scalp-ba-1-after.jpg" alt=""><figcaption>AFTER</figcaption></figure></div><div class="cap"><b>사례 1</b> · 정수리 가르마</div></div><div class="pair"><div class="imgs"><figure><img src="assets/ba/scalp-ba-2-before.jpg" alt=""><figcaption>BEFORE</figcaption></figure><figure class="after"><img src="assets/ba/scalp-ba-2-after.jpg" alt=""><figcaption>AFTER</figcaption></figure></div><div class="cap"><b>사례 2</b> · 정수리</div></div><div class="pair"><div class="imgs"><figure><img src="assets/ba/scalp-ba-3-before.jpg" alt=""><figcaption>BEFORE</figcaption></figure><figure class="after"><img src="assets/ba/scalp-ba-3-after.jpg" alt=""><figcaption>AFTER</figcaption></figure></div><div class="cap"><b>사례 3</b> · 이마 헤어라인</div></div></div>
-  <div class="callout" style="margin-top:.9em">블랙 포 스칼프 + 마이크로젝션 + 샴푸 · 스칼프 부스터 홈케어로 운영한 현장 사례입니다. 관리 전후 외관 비교이며 <b>개인차가 있습니다.</b></div>
+  <div class="callout" style="margin-top:.9em">블랙 포 스칼프 + 마이크로젝션 + 샴푸 · 스칼프 부스터 홈케어로 운영한 현장 사례입니다. 관리 전후 외관 비교이며 <b>개인차가 있습니다. 이 사진을 SNS에 그대로 올리지 마세요.</b></div>
 </section>
 
 <section class="slide dark" data-ch="03 광고 가이드">
@@ -868,7 +881,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
       <div class="step" style="margin-top:.6em"><div class="n">✓</div><div><h3>‘뚫는다 · 채널 · 침투 · 주입’ 표현이 없는가</h3></div></div>
       <div class="step" style="margin-top:.6em"><div class="n">✓</div><div><h3>치료 · 재생 · 개선 등 의약품 효능 표현이 없는가</h3></div></div>
       <div class="step" style="margin-top:.6em"><div class="n">✓</div><div><h3>‘엑소좀’ 단독이 아닌 ‘식물 엑소좀 · 세포외소포’인가</h3></div></div>
-      <div class="step" style="margin-top:.6em"><div class="n">✓</div><div><h3>사진에 니들 · 출혈 · 극적 전후 비교가 없는가</h3></div></div>
+      <div class="step" style="margin-top:.6em"><div class="n">✓</div><div><h3>사진에 니들 · 출혈 · 극적 전후 비교가 없는가 <span style="color:var(--key)">(세미나 전후 사진 SNS 게시 금지)</span></h3></div></div>
       <div class="step" style="margin-top:.6em"><div class="n">✓</div><div><h3>무료 체험 · 체험단 형식의 유인 광고가 아닌가</h3></div></div>
     </div>
     <div>
@@ -1041,7 +1054,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </div></div>
 </section>
 
-<section class="slide dark" data-ch="06 전문점 · 가격">
+<section class="slide dark price" data-ch="06 전문점 · 가격">
   <div class="eyebrow">PART 06</div>
   <h1 style="margin-top:.3em">마이크로젝션 전문점 안내</h1>
   <div class="rule"></div>
@@ -1115,7 +1128,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </div>
 </section>
 
-<section class="slide" data-ch="06 전문점 · 가격">
+<section class="slide price" data-ch="06 전문점 · 가격">
   <div class="eyebrow">EDUCATION & KIT</div>
   <h2>전문점 최초 등록 구성</h2>
   <div class="body"><div class="grid g4">
@@ -1140,7 +1153,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </div></div>
 </section>
 
-<section class="slide" data-ch="06 전문점 · 가격">
+<section class="slide price" data-ch="06 전문점 · 가격">
   <div class="eyebrow">CASE 1 · CASE 2</div>
   <h2>피부 교육 세트 구성</h2>
   <div class="cmp-row" style="flex:1">
@@ -1155,7 +1168,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </div>
 </section>
 
-<section class="slide" data-ch="06 전문점 · 가격">
+<section class="slide price" data-ch="06 전문점 · 가격">
   <div class="eyebrow">SCALP OPTIONS</div>
   <h2>두피 구성 — CASE 2 두피 추가 · CASE 3 두피 전문</h2>
   <div class="cmp-row" style="flex:1">
@@ -1169,7 +1182,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </div>
 </section>
 
-<section class="slide" data-ch="06 전문점 · 가격">
+<section class="slide price" data-ch="06 전문점 · 가격">
   <div class="eyebrow">SUMMARY</div>
   <h2>구성별 최종 비교</h2>
   <div class="body"><table class="t" style="font-size:1.05em">
@@ -1368,7 +1381,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   <div class="pgrid"><button class="ptile" data-pd="black"><span class="acc-img"><img src="assets/prod/black.webp" alt=""></span><span class="acc-txt"><span class="acc-name">엑소토카인 블랙 포 스칼프</span><span class="acc-tag">두피 전용 앰플</span></span><span class="acc-btn"></span></button><button class="ptile" data-pd="shampoo"><span class="acc-img"><img src="assets/prod/shampoo.webp" alt=""></span><span class="acc-txt"><span class="acc-name">엑소토카인 샴푸 500ml</span><span class="acc-tag">홈케어 · Rinse-off</span></span><span class="acc-btn"></span></button><button class="ptile" data-pd="scalpbooster"><span class="acc-img"><img src="assets/prod/scalpbooster.webp" alt=""></span><span class="acc-txt"><span class="acc-name">스칼프 부스터 500ml</span><span class="acc-tag">Leave-on · 샵 전용</span></span><span class="acc-btn"></span></button></div>
 </section>
 
-<section class="slide" data-ch="부록 · 질문 대응">
+<section class="slide price" data-ch="부록 · 질문 대응">
   <div class="eyebrow">AMPOULE LINE</div>
   <h2>앰플 라인 공급가</h2>
   <div class="body"><table class="t">
@@ -1382,7 +1395,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   <div class="callout">프로모션 3+1(25%) 적용 시 1박스 — 리퀴드 마스크 145,125원 · 블루 / 핑크 / 토코 / 칼리 96,750원</div></div>
 </section>
 
-<section class="slide" data-ch="부록 · 질문 대응">
+<section class="slide price" data-ch="부록 · 질문 대응">
   <div class="eyebrow">SCALP · GEL · DEVICE</div>
   <h2>두피 · 겔 · 디바이스 공급가</h2>
   <div class="body"><table class="t" style="font-size:.9em">
@@ -1466,7 +1479,9 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   document.querySelectorAll('.prodcard').forEach(c => { const m = c.querySelector('img')?.src.match(/prod\/(\w+)\./); if (m && document.querySelector('[data-pd-body="'+m[1]+'"]')) c.dataset.pd = m[1]; });
   document.querySelectorAll('[data-pd]').forEach(el => el.addEventListener('click', e => { e.stopPropagation(); openPd(el.dataset.pd); }));
   pdm.addEventListener('click', e => { if (e.target === pdm || e.target.closest('.pd-x')) closePd(); });
-  slides.forEach(s => { if (!s.classList.contains('img')) s.insertAdjacentHTML('beforeend','<div class="brand-logo" aria-hidden="true"></div>'); });
+  slides.forEach(s => { if (s.classList.contains('img')) return;
+    s.insertAdjacentHTML('beforeend','<div class="brand-logo" aria-hidden="true"></div><div class="conf-bar"><b>비공개 · 전문가 교육자료</b>협약 샵 원장님 전용 · 유출 및 공유 금지</div>');
+    if (s.classList.contains('price')) s.insertAdjacentHTML('beforeend','<div class="no-share">🔒 공유 · 노출 금지</div>'); });
 
   // FAQ 목록 ↔ 답변 페이지 이동
   document.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', e => { e.stopPropagation(); const t = document.getElementById(b.dataset.go); if (t) go(slides.indexOf(t)); }));
