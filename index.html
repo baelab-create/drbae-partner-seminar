@@ -288,6 +288,13 @@ a.gs-card:hover{box-shadow:.7em .7em 1.4em var(--neu-dark),-.7em -.7em 1.4em var
 .card.navy table.t{background:rgba(255,255,255,.07);box-shadow:none;}
 .card.navy table.t td{color:#F2EFE8;border-top-color:rgba(255,255,255,.14);}
 .card.navy table.t tr.sum td{background:rgba(255,255,255,.16);color:#fff;}
+/* 흰 배경 제품컷 — 하얀 뉴모픽 타일 위에 올려 바탕과 자연스럽게 */
+.prodcard .pimg{flex:0 0 10em;height:14em;background:#fff;border-radius:1.1em;padding:.8em;box-shadow:inset .1em .1em .3em rgba(163,152,136,.25),.35em .35em .8em var(--neu-dark),-.35em -.35em .8em var(--neu-light);}
+.prodcard .pimg img{mix-blend-mode:multiply;}
+.cmp-row.dev .prodcard .pimg{padding:.6em;}
+table.t td .pi{background:#fff;border-radius:.4em;padding:.15em .3em;box-shadow:var(--neu-out-sm);mix-blend-mode:normal;}
+.imgbox{background:#fff;}
+.imgbox.cover{background:var(--neu-bg);}
 #bar{background:var(--key);}
 #ctl button,#ctl select,#ctl span{background:rgba(31,58,92,.92);}
 #hint{background:rgba(31,58,92,.94);}
