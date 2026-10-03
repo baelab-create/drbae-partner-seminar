@@ -435,6 +435,11 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
 .slide h2.pm-main{font-size:2.15em;line-height:1.35;margin-top:.3em;color:var(--navy);}
 .pm-main em{font-style:normal;color:var(--key);}
 .pm-cards{display:flex;flex-direction:column;gap:.7em;justify-content:center;height:100%;}
+
+.tl{display:flex;flex-direction:column;gap:.55em;}
+.tl > div{display:flex;gap:1em;align-items:center;background:var(--neu-bg);border-radius:.9em;box-shadow:var(--neu-out-sm);padding:.6em 1em;}
+.tl b{flex:0 0 4.6em;color:var(--key);font-weight:900;}
+.tl span{color:var(--ink);font-size:.95em;}
 </style>
 </head>
 <body>
@@ -453,14 +458,47 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
 
   <!-- 이정은 원장 원본 자료 1~21 : 스크립트가 자동 생성 -->
   <template id="story"></template>
-
-<!-- ================= PART 01 · 닥터배 & 배랩 ================= -->
 <section class="slide dark" data-ch="01 닥터배 · 배랩">
   <div class="eyebrow">PART 01</div>
   <h1 style="margin-top:.3em">닥터배 · 배랩 소개</h1>
   <div class="rule"></div>
   <div class="sub" style="font-size:1.35em">연구실에서 시작된, 개발자가 공개된 스킨부스터 전문 브랜드</div>
   <div class="sec-num">01</div>
+</section>
+
+<section class="slide" data-ch="01 닥터배 · 배랩">
+  <div class="eyebrow">MARKET</div>
+  <h2>스킨 롱제비티 시대, 스킨부스터가 메인이 되다</h2>
+  <div class="body"><div class="grid g3">
+    <div class="card"><div class="num">1</div><h3>메디컬 스킨케어 · 슬로우에이징</h3><p>국내외를 막론하고 일회성 이벤트 관리에서 <b>피부 컨디션을 길게 유지하는 꾸준한 케어</b>로 흐름이 이동하고 있습니다.</p></div>
+    <div class="card"><div class="num">2</div><h3>스킨부스터의 대두</h3><p>스킨부스터는 옵션이 아닌 관리 프로그램의 <b>메인</b>이 되었습니다. 어떤 스킨부스터를 쓰는지가 곧 샵의 수준을 보여줍니다.</p></div>
+    <div class="card"><div class="num">3</div><h3>‘전달’이 핵심인 카테고리</h3><p>스킨부스터는 <b>적극적으로 고르게 전달</b>해야 의미가 있습니다. 성분만큼 도포 방식이 중요합니다.</p></div>
+  </div></div>
+</section>
+
+<section class="slide" data-ch="01 닥터배 · 배랩">
+  <div class="eyebrow">SKIN LONGEVITY</div>
+  <h2>병원은 의료 영역, 관리실은 각질층 수준의 화장품 관리</h2>
+  <div class="split wide">
+    <div class="imgbox"><img src="assets/ba/why-skinbooster.jpg" alt="스킨 롱제비티 — 병원과 관리실"></div>
+    <div>
+      <p class="kicker">서로 대체하는 관계가 아닙니다. 닥터배가 하는 것은 <b>화장품 범위의 관리</b>입니다.</p>
+      <ul class="pts">
+        <li><b>높은 활성 함량</b> — 블루는 전성분 47종 중 절반 이상이 활성 원료</li>
+        <li><b>정제된 원료</b> — 병풀 세포외소포를 연구실이 직접 분리 · 정제</li>
+        <li><b>싱글 유즈</b> — 5ml 유리 바이알 단회용 밀봉, 고객 앞에서 새 병 개봉</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-ch="01 닥터배 · 배랩">
+  <div class="eyebrow">THE GAP</div>
+  <h2>병원에는 방법이 있지만, 관리실에는 없었다</h2>
+  <div class="cmp-row" style="flex:1;align-items:center">
+    <div class="card" style="border-top:.3em solid var(--red)"><span class="tag no">병원</span><h3 style="margin-top:.6em;font-size:1.5em">주사기 · RF니들 · MTS</h3><p style="font-size:1.05em">의사는 침습적 방법으로 스킨부스터를 깊이 전달할 수 있습니다. 하지만 피부관리실에서 이것을 쓰면 <b>무면허 의료행위</b>입니다.</p></div>
+    <div class="card" style="border-top:.3em solid var(--leaf)"><span class="tag ok">피부관리실</span><h3 style="margin-top:.6em;font-size:1.5em">합법적인 대안이 없었다</h3><p style="font-size:1.05em">손 · 브러시 도포만으로는 고가의 스킨부스터를 고르게 쓰기 어렵습니다. <b>관리실에서 합법적으로 쓸 수 있는 전달 솔루션</b>이 필요했습니다.</p></div>
+  </div>
 </section>
 
 <section class="slide" data-ch="01 닥터배 · 배랩">
@@ -516,69 +554,21 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
 </section>
 
 <section class="slide" data-ch="01 닥터배 · 배랩">
-  <div class="eyebrow">LAB START-UP</div>
-  <h2>정부가 권한 실험실 창업 — 배랩의 시작</h2>
+  <div class="eyebrow">LAB START-UP · TIMELINE</div>
+  <h2>정부가 권한 실험실 창업 — 연구실에서 스킨부스터까지</h2>
   <div class="split">
-    <div>
-      <div class="imgbox plain" style="height:5em;margin-bottom:1.2em"><img src="assets/img/gov.png" alt="중소벤처기업부 · 과학기술정보통신부 · 교육부"></div>
-      <p class="kicker">교육부 · 과기정통부가 주축이 된 <b>실험실 창업 사업</b>은 피부관리실에서 합법적으로 적극적인 피부 관리를 가능하게 할 기술을 가진 배원규 교수에게 창업을 적극 권했습니다.</p>
-      <ul class="pts">
-        <li>2018.11 <b>㈜배랩 설립</b> — 실험실특화형 창업 1차년도 성공 기업</li>
-        <li>2021 숭실대 실험실특화형 창업선도대학 <b>성공모델</b> 선정</li>
-        <li>2023.11 대한민국 과학기술대전 <b>‘딥사이언스 기업’</b> 선정</li>
-      </ul>
+    <div style="display:flex;flex-direction:column;gap:.8em;height:100%">
+      <div class="imgbox plain" style="height:3.6em;flex:none"><img src="assets/img/gov.png" alt="중소벤처기업부 · 과학기술정보통신부 · 교육부"></div>
+      <div class="imgbox cover" style="flex:1;min-height:0"><img src="assets/img/booth.jpg" alt="2023 과학기술대전 배랩 부스"></div>
     </div>
-    <div class="imgbox cover"><img src="assets/img/booth.jpg" alt="2023 과학기술대전 배랩 부스"></div>
-  </div>
-</section>
-
-<section class="slide" data-ch="01 닥터배 · 배랩">
-  <div class="eyebrow">TIMELINE</div>
-  <h2>연구실에서 식물 유래 세포외소포 스킨부스터까지</h2>
-  <div class="body"><div class="grid g4">
-    <div class="card tight"><div class="tag gold">2018.11</div><h3 style="margin-top:.5em">㈜배랩 설립</h3><p>교육부 · 과기정통부 · 숭실대 지원 실험실 창업</p></div>
-    <div class="card tight"><div class="tag gold">2019.08</div><h3 style="margin-top:.5em">STM 표지 논문</h3><p>독사 어금니 모사 구조 연구</p></div>
-    <div class="card tight"><div class="tag gold">2019–2020</div><h3 style="margin-top:.5em">원천기술 양산</h3><p>마이크로 구조물 대량생산 체계 확보, ‘닥터배’ 전개</p></div>
-    <div class="card tight"><div class="tag gold">2021.12</div><h3 style="margin-top:.5em">엑소토카인 스킨부스터 출시</h3><p>대학 연구실 브랜드 Dr. BAE Exotokine</p></div>
-    <div class="card tight"><div class="tag gold">2023.06</div><h3 style="margin-top:.5em">사우디 SFDA 등록</h3><p>병풀 캘러스 세포외소포 제품</p></div>
-    <div class="card tight"><div class="tag gold">2023.11</div><h3 style="margin-top:.5em">딥사이언스 기업</h3><p>대한민국 과학기술대전 선정</p></div>
-    <div class="card tight"><div class="tag gold">2025</div><h3 style="margin-top:.5em">유럽 메디컬 시장 수출</h3><p>Spain 2026 세미나 등 해외 전문가 교육</p></div>
-    <div class="card tight navy"><div class="tag gold">NOW</div><h3 style="margin-top:.5em">전국 공인 파트너 9인</h3><p>마이크로젝션 교육 · 멘토링 네트워크</p></div>
-  </div></div>
-</section>
-
-<section class="slide" data-ch="01 닥터배 · 배랩">
-  <div class="eyebrow">MARKET</div>
-  <h2>스킨 롱제비티 시대, 스킨부스터가 메인이 되다</h2>
-  <div class="body"><div class="grid g3">
-    <div class="card"><div class="num">1</div><h3>메디컬 스킨케어 · 슬로우에이징</h3><p>국내외를 막론하고 일회성 이벤트 관리에서 <b>피부 컨디션을 길게 유지하는 꾸준한 케어</b>로 흐름이 이동하고 있습니다.</p></div>
-    <div class="card"><div class="num">2</div><h3>스킨부스터의 대두</h3><p>스킨부스터는 옵션이 아닌 관리 프로그램의 <b>메인</b>이 되었습니다. 어떤 스킨부스터를 쓰는지가 곧 샵의 수준을 보여줍니다.</p></div>
-    <div class="card"><div class="num">3</div><h3>‘전달’이 핵심인 카테고리</h3><p>스킨부스터는 <b>적극적으로 고르게 전달</b>해야 의미가 있습니다. 성분만큼 도포 방식이 중요합니다.</p></div>
-  </div></div>
-</section>
-<section class="slide" data-ch="01 닥터배 · 배랩">
-  <div class="eyebrow">SKIN LONGEVITY</div>
-  <h2>병원은 의료 영역, 관리실은 각질층 수준의 화장품 관리</h2>
-  <div class="split wide">
-    <div class="imgbox"><img src="assets/ba/why-skinbooster.jpg" alt="스킨 롱제비티 — 병원과 관리실"></div>
-    <div>
-      <p class="kicker">서로 대체하는 관계가 아닙니다. 닥터배가 하는 것은 <b>화장품 범위의 관리</b>입니다.</p>
-      <ul class="pts">
-        <li><b>높은 활성 함량</b> — 블루는 전성분 47종 중 절반 이상이 활성 원료</li>
-        <li><b>정제된 원료</b> — 병풀 세포외소포를 연구실이 직접 분리 · 정제</li>
-        <li><b>싱글 유즈</b> — 5ml 유리 바이알 단회용 밀봉, 고객 앞에서 새 병 개봉</li>
-      </ul>
+    <div class="tl">
+      <div><b>2018.11</b><span>㈜배랩 설립 — 교육부 · 과기정통부 · 숭실대 지원 실험실 창업</span></div>
+      <div><b>2019.08</b><span>Science Translational Medicine 표지 논문 · 10대 기초연구 성과</span></div>
+      <div><b>2019–20</b><span>원천기술 양산 체계 확보, ‘닥터배’ 전개</span></div>
+      <div><b>2021</b><span>창업선도대학 성공모델 선정 · 엑소토카인 스킨부스터 출시</span></div>
+      <div><b>2023</b><span>사우디 SFDA 등록 · 과학기술대전 ‘딥사이언스 기업’ 선정</span></div>
+      <div><b>NOW</b><span>유럽 메디컬 시장 수출 · 전국 공인 파트너 9인 네트워크</span></div>
     </div>
-  </div>
-</section>
-
-
-<section class="slide" data-ch="01 닥터배 · 배랩">
-  <div class="eyebrow">THE GAP</div>
-  <h2>병원에는 방법이 있지만, 관리실에는 없었다</h2>
-  <div class="cmp-row" style="flex:1;align-items:center">
-    <div class="card" style="border-top:.3em solid var(--red)"><span class="tag no">병원</span><h3 style="margin-top:.6em;font-size:1.5em">주사기 · RF니들 · MTS</h3><p style="font-size:1.05em">의사는 침습적 방법으로 스킨부스터를 깊이 전달할 수 있습니다. 하지만 피부관리실에서 이것을 쓰면 <b>무면허 의료행위</b>입니다.</p></div>
-    <div class="card" style="border-top:.3em solid var(--leaf)"><span class="tag ok">피부관리실</span><h3 style="margin-top:.6em;font-size:1.5em">합법적인 대안이 없었다</h3><p style="font-size:1.05em">손 · 브러시 도포만으로는 고가의 스킨부스터를 고르게 쓰기 어렵습니다. <b>관리실에서 합법적으로 쓸 수 있는 전달 솔루션</b>이 필요했습니다.</p></div>
   </div>
 </section>
 
@@ -587,84 +577,15 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   <div class="big-quote" style="margin-top:.6em">배랩은 요즘 트렌드인 스킨부스터를<br><em>피부관리실에서 합법적으로</em> 사용할 수 있는<br>솔루션을 제공하는 스킨부스터 전문 브랜드입니다.</div>
 </section>
 
-<section class="slide" data-ch="01 닥터배 · 배랩">
-  <div class="eyebrow">PRINCIPLES</div>
-  <h2>8년간 무너지지 않은 가격과 유통</h2>
-  <div class="body"><div class="grid g3">
-    <div class="card"><div class="stat-n">8<small>년</small></div><h3>가격 · 유통 질서 유지</h3><p>가격이 무너진 적도, 유통 질서가 무너진 적도 없습니다.</p></div>
-    <div class="card"><div class="stat-n">0<small>건</small></div><h3>인플루언서 공동구매</h3><p>전문가 라인의 가치를 지키기 위해 공구 제안은 모두 거절해 왔습니다.</p></div>
-    <div class="card"><div class="stat-n">5<small>년+</small></div><h3>가격 변동 없음</h3><p>메인 제품 블루 · 핑크는 2021년부터 지금까지, 단종 계획 없음.</p></div>
-    <div class="card"><h3>개발자 공개 브랜드</h3><p>연구자와 개발자가 공개된 브랜드 — 인스타그램 <b>@dr.bae_medical</b></p></div>
-    <div class="card"><h3>선진 메디컬 시장 수출</h3><p>유럽 등 해외 전문가 시장으로 수출 · 교육</p></div>
-    <div class="card navy"><h3>원장님을 지역 전문가로</h3><p>원장님이 검증 가능한 제품을 골랐다는 사실 자체가 샵의 전문성과 브랜딩이 됩니다.</p></div>
-  </div></div>
-</section>
-<section class="slide" data-ch="01 닥터배 · 배랩">
-  <div class="eyebrow">GET STARTED</div>
-  <h2>닥터배 시작하기 — 데모 신청부터 주문까지</h2>
-  <div class="body"><div class="gs">
-    <div class="gs-note">🔒 <b>공유하지 말아 주세요.</b> 구매 · 납품 링크는 사업자 등록을 마치신 <b>정식 원장님께만</b> 안내드립니다. 건전한 유통 문화를 위해 단톡방 · 중고거래 · SNS 등 외부 공유는 삼가 주세요.</div>
-    <a class="gs-card first" href="https://m.site.naver.com/2aTLN" target="_blank" rel="noopener"><div class="gs-step">STEP<b>1</b></div><div class="gs-body"><h3>데모키트로 먼저 테스트</h3><p>정식 도입 전, 제품을 직접 써 보실 수 있는 소량 구성입니다.</p><span class="gs-pill">여기서 시작하세요</span></div><div class="gs-go">›</div></a>
-    <a class="gs-card" href="https://smartstore.naver.com/drbae/products/6338720100" target="_blank" rel="noopener"><div class="gs-step">STEP<b>2</b></div><div class="gs-body"><h3>정식 납품 주문</h3><p>데모를 써 보시고 마음에 드시면, 이 링크로 정식 납품을 진행합니다.</p><span class="gs-pill">가격 · 프로모션 구성 안내</span></div><div class="gs-go">›</div></a>
-    <a class="gs-card" href="https://m.site.naver.com/2aTWX" target="_blank" rel="noopener"><div class="gs-step">STEP<b>3</b></div><div class="gs-body"><h3>원장님들의 후기 참고</h3><p>이미 사용 중인 원장님들의 후기입니다. 프로그램 구성에 참고하세요.</p><span class="gs-pill">참고 자료</span></div><div class="gs-go">›</div></a>
-    <div class="gs-foot">STEP 1 · 2 · 3 링크는 모두 <b>네이버 스마트스토어</b>로 연결됩니다. 그 밖의 문의는 인스타그램 <a href="https://www.instagram.com/dr.bae_medical/" target="_blank" rel="noopener">@dr.bae_medical</a> DM으로 주세요. · 마이크로젝션은 공인 파트너 교육 후 납품됩니다.</div>
-  </div></div>
-</section>
-
-
-<!-- ================= PART 02 · 원료 ================= -->
-<section class="slide dark" data-ch="02 핵심 원료">
+<section class="slide dark" data-ch="02 마이크로젝션">
   <div class="eyebrow">PART 02</div>
-  <h1 style="margin-top:.3em">핵심 원료 · 식물 유래 세포외소포</h1>
-  <div class="rule"></div>
-  <div class="sub" style="font-size:1.35em">병풀캘러스세포외소포(Centella Asiatica Callus EV)</div>
-  <div class="sec-num">02</div>
-</section>
-
-<section class="slide" data-ch="02 핵심 원료">
-  <div class="eyebrow">WHAT IS EV</div>
-  <h2>식물이 만드는 천연 나노 캡슐</h2>
-  <div class="split hero">
-    <div class="imgbox"><img src="assets/img/ev-tem.jpg" alt="EV 전자현미경 이미지"></div>
-    <div>
-      <p class="kicker">세포외소포(Extracellular Vesicle, EV)는 식물 세포가 신호 전달을 위해 스스로 분비하는 <b>지름 30~150nm의 지질 이중막 나노 구조체</b>입니다.</p>
-      <ul class="pts">
-        <li>일반 추출물 = 성분을 물 · 알코올에 녹인 것</li>
-        <li>EV = 세포막과 같은 구조의 막 안에 <b>활성 성분이 보호된 채 포장된 상태</b></li>
-        <li>지질 이중막이 각질층 세포간지질과 유사 → <b>피부 친화성</b></li>
-        <li>2025년 1월부터 <b>‘식물 엑소좀’</b> 표현이 허용된 원료 카테고리</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="slide" data-ch="02 핵심 원료">
-  <div class="eyebrow">WHY CENTELLA CALLUS</div>
-  <h2>왜 병풀이고, 왜 캘러스인가</h2>
-  <div class="imgbox" style="flex:1;min-height:0;margin-top:1em"><img src="assets/img/filter.jpg" alt="멀티스케일 필터 — 5mm 멤브레인에서 100nm 포어까지"></div>
-  <div class="grid g3" style="margin-top:1em">
-    <div class="card tight"><h3>① 병풀 — 수천 년의 진정 원료</h3><p>아시아티코사이드 · 마데카식애씨드 · 아시아틱애씨드 등 트리테르페노이드 계열이 피부 진정과 컨디션 케어에 기여합니다.</p></div>
-    <div class="card tight"><h3>② 캘러스 — 균일한 품질</h3><p>무균 환경에서 배양한 식물 조직. 계절 · 산지에 따른 편차 없이 <b>매 관리마다 같은 경험</b>을 재현합니다.</p></div>
-    <div class="card tight"><h3>③ 연구실 직접 분리 · 정제</h3><p>위 사진의 마이크로 · 나노 멀티스케일 필터로 정제 — 정제 설비 실물을 언론에 공개했습니다.</p></div>
-  </div>
-</section>
-
-<section class="slide" data-ch="02 핵심 원료">
-  <div class="eyebrow">RESEARCH</div>
-  <h2>식물 유래 EV는 무엇을 위해 연구되고 있는가</h2>
-  <div class="imgbox" style="flex:1;margin-top:1.2em"><img src="assets/img/ev-research.jpg" alt="식물 유래 EV 연구 분야"></div>
-</section>
-
-<!-- ================= PART 03 · 마이크로젝션 ================= -->
-<section class="slide dark" data-ch="03 마이크로젝션">
-  <div class="eyebrow">PART 03</div>
   <h1 style="margin-top:.3em">마이크로젝션</h1>
   <div class="rule"></div>
   <div class="sub" style="font-size:1.35em">원리 · 법적 근거 · 운용법 · 프로그램 · 두피 확장</div>
-  <div class="sec-num">03</div>
+  <div class="sec-num">02</div>
 </section>
 
-<section class="slide" data-ch="03 마이크로젝션">
+<section class="slide" data-ch="02 마이크로젝션">
   <div class="eyebrow">THE NAME</div>
   <h2>MICRO + PROJECTION — INJECTION이 아닙니다</h2>
   <div class="split hero">
@@ -685,20 +606,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </div>
 </section>
 
-<section class="slide" data-ch="03 마이크로젝션">
-  <div class="eyebrow">TWO PILLARS</div>
-  <h2>스킨부스터 관리의 두 기둥 — 성분 그리고 도포</h2>
-  <div class="body">
-    <p class="kicker" style="font-size:1.2em">피부장벽은 원래 물질을 통과시키지 않도록 설계된 조직입니다. 각질세포와 세포간지질이 <b>벽돌과 회반죽처럼</b> 촘촘히 쌓여 있습니다.</p>
-    <div class="grid g2">
-      <div class="card"><div class="num">1</div><h3>무엇을 올리는가 — 성분</h3><p>세포외소포 · PDRN · NAD 계열 · 고분자 히알루론산처럼 크고 복잡한 성분일수록 손 도포만으로는 고르게 펴 바르기 어렵습니다. <b>원료 단가가 높을수록 고르게 쓰는 것이 중요</b>합니다.</p></div>
-      <div class="card"><div class="num">2</div><h3>어떻게 고르게 도포하는가 — 디바이스</h3><p>어느 한쪽만으로는 관리의 값이 성립하지 않습니다. 닥터배는 <b>원료(EV)와 도포 기술(마이크로젝션)이 같은 연구실</b>에서 나왔습니다.</p></div>
-    </div>
-    <div class="callout">성분 회사가 남의 기기를 빌리거나, 기기 회사가 남의 원료를 담는 구조가 아닙니다 — 원장님이 고객에게 설명할 때 <b>가장 강한 근거</b>입니다.</div>
-  </div>
-</section>
-
-<section class="slide" data-ch="03 마이크로젝션">
+<section class="slide" data-ch="02 마이크로젝션">
   <div class="eyebrow">HOW IT WORKS</div>
   <h2>뚫지 않고, 모세관력으로 고르게</h2>
   <div class="split hero">
@@ -712,7 +620,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </div>
 </section>
 
-<section class="slide" data-ch="03 마이크로젝션">
+<section class="slide" data-ch="02 마이크로젝션">
   <div class="eyebrow">LEGAL</div>
   <h2>왜 피부관리실에서 합법적으로 쓸 수 있는가</h2>
   <div class="body">
@@ -724,28 +632,11 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
       <tr><td>무면허 의료행위 — 5년 이하 징역 / 5천만 원 이하 벌금</td><td>숨지 않고 SNS · 블로그로 당당하게 홍보 가능</td></tr>
       <tr><td>기기 2,000~3,000만 원, 잦은 교체</td><td>1회용 스탬프 · 앰플과 결합해 바로 운용</td></tr>
     </table>
-    <div class="callout">단, 합법적인 기기도 <b>“뚫는다 · 주입 · 시술” 같은 표현</b>을 쓰는 순간 근거가 무너집니다 → PART 04 광고 가이드</div>
+    <div class="callout">단, 합법적인 기기도 <b>“뚫는다 · 주입 · 시술” 같은 표현</b>을 쓰는 순간 근거가 무너집니다 → PART 03 광고 가이드</div>
   </div>
 </section>
 
-<section class="slide" data-ch="03 마이크로젝션">
-  <div class="eyebrow">AMPOULE PAIRING</div>
-  <h2>스탬프 결합은 ‘성분’이 아니라 ‘점도’가 결정합니다</h2>
-  <div class="body">
-    <table class="t">
-      <tr><th>제품</th><th>제형</th><th class="c">스탬프 결합</th><th>운용 위치</th></tr>
-      <tr><td><b>엑소토카인 블루</b></td><td>점성 있는 앰플</td><td class="c"><span class="tag ok">가능</span></td><td>스탬핑 메인 — 안티에이징 지향</td></tr>
-      <tr><td><b>피디로엔 핑크</b></td><td>점성 있는 앰플</td><td class="c"><span class="tag ok">가능</span></td><td>스탬핑 메인 — 진정 · 밸런싱 지향</td></tr>
-      <tr><td><b>칼리파우더</b></td><td>동결건조 파우더</td><td class="c"><span class="tag gold">간접</span></td><td>블루 · 핑크에 용해 후 스탬핑 / 토코포르테에 용해 후 에어건 — 업셀</td></tr>
-      <tr><td><b>엑소토카인 토코포르테</b></td><td>저점도 액상</td><td class="c"><span class="tag no">불가</span></td><td>스탬핑 전후 케어 — 에어건 · 손 도포</td></tr>
-      <tr><td><b>엑소토카인 에센스 겔</b></td><td>카보머 겔</td><td class="c"><span class="tag no">불가</span></td><td>매뉴얼 베이스 + 마무리 진정</td></tr>
-      <tr><td><b>엑소토카인 리퀴드 마스크</b></td><td>소프트필 앰플</td><td class="c"><span class="tag no">불가</span></td><td>세션 분리 — 별도 필 관리 회차</td></tr>
-      <tr><td><b>엑소토카인 블랙 포 스칼프</b></td><td>점성 있는 앰플</td><td class="c"><span class="tag ok">두피</span></td><td>두피 라인 스탬핑 메인 (멘톨 함유 — 얼굴 사용 금지)</td></tr>
-    </table>
-  </div>
-</section>
-
-<section class="slide" data-ch="03 마이크로젝션">
+<section class="slide" data-ch="02 마이크로젝션">
   <div class="eyebrow">ABSOLUTE RULES</div>
   <h2>마이크로젝션 절대 규칙</h2>
   <div class="split narrow">
@@ -764,7 +655,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </div>
 </section>
 
-<section class="slide" data-ch="03 마이크로젝션">
+<section class="slide" data-ch="02 마이크로젝션">
   <div class="eyebrow">THE GATE</div>
   <h2>적용 판정 — 단 하나의 질문: “지금 이 고객의 장벽은 건강한가?”</h2>
   <div class="cmp-row" style="flex:1">
@@ -776,7 +667,8 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
       <div class="callout" style="font-size:.85em">💡 “지금은 장벽을 세우는 단계, 회복되면 부스터 관리로” — <b>A→B 전환이 곧 업셀링 동선</b></div></div>
   </div>
 </section>
-<section class="slide" data-ch="03 마이크로젝션">
+
+<section class="slide" data-ch="02 마이크로젝션">
   <div class="eyebrow">TROUBLED SKIN CARE</div>
   <h2>문제성 피부는 ‘붓 도포 소프트케어’로 시작합니다</h2>
   <div class="split wide">
@@ -793,15 +685,14 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </div>
 </section>
 
-<section class="slide" data-ch="03 마이크로젝션">
+<section class="slide" data-ch="02 마이크로젝션">
   <div class="eyebrow">CASE · TROUBLED SKIN</div>
   <h2>문제성 피부 관리 사례 — 장벽을 먼저 세운 결과</h2>
   <div class="ba"><div class="pair"><div class="imgs"><figure><img src="assets/ba/skin-ba-1-before.jpg" alt=""><figcaption>BEFORE</figcaption></figure><figure class="after"><img src="assets/ba/skin-ba-1-after.jpg" alt=""><figcaption>AFTER</figcaption></figure></div><div class="cap"><b>사례 1</b> · 볼</div></div><div class="pair"><div class="imgs"><figure><img src="assets/ba/skin-ba-2-before.jpg" alt=""><figcaption>BEFORE</figcaption></figure><figure class="after"><img src="assets/ba/skin-ba-2-after.jpg" alt=""><figcaption>AFTER</figcaption></figure></div><div class="cap"><b>사례 2</b> · 볼</div></div><div class="pair"><div class="imgs"><figure><img src="assets/ba/skin-ba-3-before.jpg" alt=""><figcaption>BEFORE</figcaption></figure><figure class="after"><img src="assets/ba/skin-ba-3-after.jpg" alt=""><figcaption>AFTER</figcaption></figure></div><div class="cap"><b>사례 3</b> · 볼</div></div></div>
   <div class="callout" style="margin-top:.9em">A군 프로그램(블루 · 핑크 소프트케어, 마이크로젝션 미적용)으로 장벽을 정돈한 현장 사례입니다. 관리 전후 외관 비교이며 <b>개인차가 있습니다.</b></div>
 </section>
 
-
-<section class="slide" data-ch="03 마이크로젝션">
+<section class="slide" data-ch="02 마이크로젝션">
   <div class="eyebrow">STANDARD PROTOCOL</div>
   <h2>기본 마이크로젝션 페이스 프로그램 5단계</h2>
   <div class="split wide">
@@ -818,7 +709,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </div>
 </section>
 
-<section class="slide" data-ch="03 마이크로젝션">
+<section class="slide" data-ch="02 마이크로젝션">
   <div class="eyebrow">PRICE TIERS</div>
   <h2>가격대별 4단계 관리 프로그램 (페이스)</h2>
   <div class="body"><div class="grid g4">
@@ -830,7 +721,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   <div class="callout">티어는 <b>개봉하는 바이알 수</b>와 <b>마이크로젝션 유무</b>로 구분합니다. 고객이 눈으로 차이를 확인하므로 가격 설명이 필요 없습니다. “오늘은 파우더 한 병 더 녹여서 진하게 가겠습니다” 한 문장이면 충분합니다.</div></div>
 </section>
 
-<section class="slide" data-ch="03 마이크로젝션">
+<section class="slide" data-ch="02 마이크로젝션">
   <div class="eyebrow">FIELD RECIPES</div>
   <h2>현장 원장님들의 응용 프로그램 (B군 · 20만원~)</h2>
   <div class="body"><div class="grid g3">
@@ -844,7 +735,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   <div class="callout">원장님 후기 65건 → 대표 관리 20종으로 정리된 <b>레시피 공유 페이지</b>가 별도로 준비되어 있습니다.</div></div>
 </section>
 
-<section class="slide" data-ch="03 마이크로젝션">
+<section class="slide" data-ch="02 마이크로젝션">
   <div class="eyebrow">SCALP</div>
   <h2>피부뿐 아니라 두피까지 — 마이크로젝션 두피 케어</h2>
   <div class="split">
@@ -863,7 +754,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </div>
 </section>
 
-<section class="slide" data-ch="03 마이크로젝션">
+<section class="slide" data-ch="02 마이크로젝션">
   <div class="eyebrow">SCALP PROGRAMS</div>
   <h2>두피 관리 4단계 프로그램</h2>
   <div class="body"><div class="grid g4">
@@ -874,7 +765,8 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </div>
   <div class="callout">홈케어 — 마이크로블랙 두피 샴푸 + 스칼프 부스터(leave-on)로 <b>재방문 사이를 채우는 리테일 매출</b>까지 연결됩니다.</div></div>
 </section>
-<section class="slide" data-ch="03 마이크로젝션">
+
+<section class="slide" data-ch="02 마이크로젝션">
   <div class="eyebrow">SCALP CARE</div>
   <h2>헤어라인 · 가르마를 따라 수직으로 스탬핑</h2>
   <div class="split wide">
@@ -888,24 +780,22 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </div>
 </section>
 
-<section class="slide" data-ch="03 마이크로젝션">
+<section class="slide" data-ch="02 마이크로젝션">
   <div class="eyebrow">CASE · SCALP</div>
   <h2>두피 관리 사례 — 마이크로젝션 스칼프 프로그램</h2>
   <div class="ba"><div class="pair"><div class="imgs"><figure><img src="assets/ba/scalp-ba-1-before.jpg" alt=""><figcaption>BEFORE</figcaption></figure><figure class="after"><img src="assets/ba/scalp-ba-1-after.jpg" alt=""><figcaption>AFTER</figcaption></figure></div><div class="cap"><b>사례 1</b> · 정수리 가르마</div></div><div class="pair"><div class="imgs"><figure><img src="assets/ba/scalp-ba-2-before.jpg" alt=""><figcaption>BEFORE</figcaption></figure><figure class="after"><img src="assets/ba/scalp-ba-2-after.jpg" alt=""><figcaption>AFTER</figcaption></figure></div><div class="cap"><b>사례 2</b> · 정수리</div></div><div class="pair"><div class="imgs"><figure><img src="assets/ba/scalp-ba-3-before.jpg" alt=""><figcaption>BEFORE</figcaption></figure><figure class="after"><img src="assets/ba/scalp-ba-3-after.jpg" alt=""><figcaption>AFTER</figcaption></figure></div><div class="cap"><b>사례 3</b> · 이마 헤어라인</div></div></div>
   <div class="callout" style="margin-top:.9em">블랙 포 스칼프 + 마이크로젝션 + 샴푸 · 스칼프 부스터 홈케어로 운영한 현장 사례입니다. 관리 전후 외관 비교이며 <b>개인차가 있습니다.</b></div>
 </section>
 
-
-<!-- ================= PART 04 · 광고 ================= -->
-<section class="slide dark" data-ch="04 광고 가이드">
-  <div class="eyebrow">PART 04</div>
+<section class="slide dark" data-ch="03 광고 가이드">
+  <div class="eyebrow">PART 03</div>
   <h1 style="margin-top:.3em">어떻게 알릴 것인가</h1>
   <div class="rule"></div>
   <div class="sub" style="font-size:1.35em">인스타그램 · 블로그 — SNS 게시물은 그대로 증거가 됩니다</div>
-  <div class="sec-num">04</div>
+  <div class="sec-num">03</div>
 </section>
 
-<section class="slide" data-ch="04 광고 가이드">
+<section class="slide" data-ch="03 광고 가이드">
   <div class="eyebrow">LAW</div>
   <h2>홍보 전에 반드시 알아야 할 세 가지 법</h2>
   <div class="body"><div class="grid g3">
@@ -916,7 +806,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   <div class="callout red">2026년 5~6월 두 달간 <b>6건 송치 · 형사고발</b> — 인스타 광고, 블로그 체험단 ‘무료 MTS’ 홍보, 시연 사진 한 장으로도 고발되었습니다.</div></div>
 </section>
 
-<section class="slide" data-ch="04 광고 가이드">
+<section class="slide" data-ch="03 광고 가이드">
   <div class="eyebrow">TWO LANGUAGES</div>
   <h2>이해하는 말과 말하는 말은 다릅니다</h2>
   <div class="cmp-row" style="flex:1">
@@ -927,7 +817,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </div>
 </section>
 
-<section class="slide" data-ch="04 광고 가이드">
+<section class="slide" data-ch="03 광고 가이드">
   <div class="eyebrow">WORDING</div>
   <h2>이렇게 바꿔 쓰세요</h2>
   <div class="body"><table class="cmp">
@@ -941,7 +831,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </table></div>
 </section>
 
-<section class="slide" data-ch="04 광고 가이드">
+<section class="slide" data-ch="03 광고 가이드">
   <div class="eyebrow">CHECKLIST</div>
   <h2>게시 전 30초 체크리스트</h2>
   <div class="split">
@@ -963,7 +853,61 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </div>
 </section>
 
-<!-- ================= PART 05 · 제품 ================= -->
+<section class="slide dark" data-ch="04 핵심 원료">
+  <div class="eyebrow">PART 04</div>
+  <h1 style="margin-top:.3em">핵심 원료 · 식물 유래 세포외소포</h1>
+  <div class="rule"></div>
+  <div class="sub" style="font-size:1.35em">병풀캘러스세포외소포(Centella Asiatica Callus EV)</div>
+  <div class="sec-num">04</div>
+</section>
+
+<section class="slide" data-ch="04 핵심 원료">
+  <div class="eyebrow">TWO PILLARS</div>
+  <h2>스킨부스터 관리의 두 기둥 — 성분 그리고 도포</h2>
+  <div class="body">
+    <p class="kicker" style="font-size:1.2em">피부장벽은 원래 물질을 통과시키지 않도록 설계된 조직입니다. 각질세포와 세포간지질이 <b>벽돌과 회반죽처럼</b> 촘촘히 쌓여 있습니다.</p>
+    <div class="grid g2">
+      <div class="card"><div class="num">1</div><h3>무엇을 올리는가 — 성분</h3><p>세포외소포 · PDRN · NAD 계열 · 고분자 히알루론산처럼 크고 복잡한 성분일수록 손 도포만으로는 고르게 펴 바르기 어렵습니다. <b>원료 단가가 높을수록 고르게 쓰는 것이 중요</b>합니다.</p></div>
+      <div class="card"><div class="num">2</div><h3>어떻게 고르게 도포하는가 — 디바이스</h3><p>어느 한쪽만으로는 관리의 값이 성립하지 않습니다. 닥터배는 <b>원료(EV)와 도포 기술(마이크로젝션)이 같은 연구실</b>에서 나왔습니다.</p></div>
+    </div>
+    <div class="callout">성분 회사가 남의 기기를 빌리거나, 기기 회사가 남의 원료를 담는 구조가 아닙니다 — 원장님이 고객에게 설명할 때 <b>가장 강한 근거</b>입니다.</div>
+  </div>
+</section>
+
+<section class="slide" data-ch="04 핵심 원료">
+  <div class="eyebrow">WHAT IS EV</div>
+  <h2>식물이 만드는 천연 나노 캡슐</h2>
+  <div class="split hero">
+    <div class="imgbox"><img src="assets/img/ev-tem.jpg" alt="EV 전자현미경 이미지"></div>
+    <div>
+      <p class="kicker">세포외소포(Extracellular Vesicle, EV)는 식물 세포가 신호 전달을 위해 스스로 분비하는 <b>지름 30~150nm의 지질 이중막 나노 구조체</b>입니다.</p>
+      <ul class="pts">
+        <li>일반 추출물 = 성분을 물 · 알코올에 녹인 것</li>
+        <li>EV = 세포막과 같은 구조의 막 안에 <b>활성 성분이 보호된 채 포장된 상태</b></li>
+        <li>지질 이중막이 각질층 세포간지질과 유사 → <b>피부 친화성</b></li>
+        <li>2025년 1월부터 <b>‘식물 엑소좀’</b> 표현이 허용된 원료 카테고리</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-ch="04 핵심 원료">
+  <div class="eyebrow">WHY CENTELLA CALLUS</div>
+  <h2>왜 병풀이고, 왜 캘러스인가</h2>
+  <div class="imgbox" style="flex:1;min-height:0;margin-top:1em"><img src="assets/img/filter.jpg" alt="멀티스케일 필터 — 5mm 멤브레인에서 100nm 포어까지"></div>
+  <div class="grid g3" style="margin-top:1em">
+    <div class="card tight"><h3>① 병풀 — 수천 년의 진정 원료</h3><p>아시아티코사이드 · 마데카식애씨드 · 아시아틱애씨드 등 트리테르페노이드 계열이 피부 진정과 컨디션 케어에 기여합니다.</p></div>
+    <div class="card tight"><h3>② 캘러스 — 균일한 품질</h3><p>무균 환경에서 배양한 식물 조직. 계절 · 산지에 따른 편차 없이 <b>매 관리마다 같은 경험</b>을 재현합니다.</p></div>
+    <div class="card tight"><h3>③ 연구실 직접 분리 · 정제</h3><p>위 사진의 마이크로 · 나노 멀티스케일 필터로 정제 — 정제 설비 실물을 언론에 공개했습니다.</p></div>
+  </div>
+</section>
+
+<section class="slide" data-ch="04 핵심 원료">
+  <div class="eyebrow">RESEARCH</div>
+  <h2>식물 유래 EV는 무엇을 위해 연구되고 있는가</h2>
+  <div class="imgbox" style="flex:1;margin-top:1.2em"><img src="assets/img/ev-research.jpg" alt="식물 유래 EV 연구 분야"></div>
+</section>
+
 <section class="slide dark" data-ch="05 제품 라인업">
   <div class="eyebrow">PART 05</div>
   <h1 style="margin-top:.3em">닥터배 제품 라인업</h1>
@@ -1049,19 +993,6 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </div>
 </section>
 
-
-<section class="slide" data-ch="05 제품 라인업">
-  <div class="eyebrow">FACE · INGREDIENT DOSSIER</div>
-  <h2>페이스 6종 — 전성분으로 읽는 제품 설계</h2>
-  <p class="kicker" style="font-size:.9em">제품을 누르면 전성분 기반 상세 설명이 팝업으로 열립니다. 질문이 나오면 이 화면에서 바로 보여주세요.</p>
-  <div class="pgrid"><button class="ptile" data-pd="blue"><span class="acc-img"><img src="assets/prod/blue.webp" alt=""></span><span class="acc-txt"><span class="acc-name">엑소토카인 블루</span><span class="acc-tag">페이스 메인 부스팅</span></span><span class="acc-btn"></span></button><button class="ptile" data-pd="pink"><span class="acc-img"><img src="assets/prod/pink.webp" alt=""></span><span class="acc-txt"><span class="acc-name">피디로엔 핑크</span><span class="acc-tag">진정 · 장벽 케어</span></span><span class="acc-btn"></span></button><button class="ptile" data-pd="liquidmask"><span class="acc-img"><img src="assets/prod/liquidmask.webp" alt=""></span><span class="acc-txt"><span class="acc-name">엑소토카인 리퀴드 마스크</span><span class="acc-tag">소프트 필링 · No-Rinse</span></span><span class="acc-btn"></span></button><button class="ptile" data-pd="toco"><span class="acc-img"><img src="assets/prod/toco.webp" alt=""></span><span class="acc-txt"><span class="acc-name">토코포르테 브라운</span><span class="acc-tag">페이스 + 두피 · 쿨링</span></span><span class="acc-btn"></span></button><button class="ptile" data-pd="cali"><span class="acc-img"><img src="assets/prod/cali.webp" alt=""></span><span class="acc-txt"><span class="acc-name">칼리파우더</span><span class="acc-tag">동결건조 · 무방부</span></span><span class="acc-btn"></span></button><button class="ptile" data-pd="gel500"><span class="acc-img"><img src="assets/prod/gel500.webp" alt=""></span><span class="acc-txt"><span class="acc-name">에센스겔 500ml / 150ml</span><span class="acc-tag">매뉴얼 베이스 · 샵 필수템</span></span><span class="acc-btn"></span></button></div>
-</section>
-<section class="slide" data-ch="05 제품 라인업">
-  <div class="eyebrow">SCALP · INGREDIENT DOSSIER</div>
-  <h2>두피 3종 — 전성분으로 읽는 제품 설계</h2>
-  <p class="kicker" style="font-size:.9em">제품을 누르면 전성분 기반 상세 설명이 팝업으로 열립니다. 질문이 나오면 이 화면에서 바로 보여주세요.</p>
-  <div class="pgrid"><button class="ptile" data-pd="black"><span class="acc-img"><img src="assets/prod/black.webp" alt=""></span><span class="acc-txt"><span class="acc-name">엑소토카인 블랙 포 스칼프</span><span class="acc-tag">두피 전용 앰플</span></span><span class="acc-btn"></span></button><button class="ptile" data-pd="shampoo"><span class="acc-img"><img src="assets/prod/shampoo.webp" alt=""></span><span class="acc-txt"><span class="acc-name">엑소토카인 샴푸 500ml</span><span class="acc-tag">홈케어 · Rinse-off</span></span><span class="acc-btn"></span></button><button class="ptile" data-pd="scalpbooster"><span class="acc-img"><img src="assets/prod/scalpbooster.webp" alt=""></span><span class="acc-txt"><span class="acc-name">스칼프 부스터 500ml</span><span class="acc-tag">Leave-on · 샵 전용</span></span><span class="acc-btn"></span></button></div>
-</section>
 <section class="slide" data-ch="05 제품 라인업">
   <div class="eyebrow">STARTER PROGRAM</div>
   <h2>처음 도입하는 샵을 위한 기본 프로그램 7단계 (약 50~60분)</h2>
@@ -1082,16 +1013,15 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </div></div>
 </section>
 
-<!-- ================= PART 06 · 전문점 ================= -->
-<section class="slide dark" data-ch="06 전문점 안내">
+<section class="slide dark" data-ch="06 전문점 · 가격">
   <div class="eyebrow">PART 06</div>
   <h1 style="margin-top:.3em">마이크로젝션 전문점 안내</h1>
   <div class="rule"></div>
-  <div class="sub" style="font-size:1.35em">공인 파트너 · 납품 자격 · 등록 절차 · 혜택 · 유지 기준</div>
+  <div class="sub" style="font-size:1.35em">공인 파트너 · 등록 절차 · 도입 세트 가격 · 혜택 · 유지 기준</div>
   <div class="sec-num">06</div>
 </section>
 
-<section class="slide" data-ch="06 전문점 안내">
+<section class="slide" data-ch="06 전문점 · 가격">
   <div class="eyebrow">CERTIFIED PARTNERS</div>
   <h2>전국 닥터배 공인 파트너 9인</h2>
   <div class="ptn">
@@ -1119,7 +1049,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   <p class="ptn-foot">마이크로젝션은 <b>공인 파트너의 교육과 멘토링</b>을 마치신 뒤 납품됩니다 · 스킨부스터는 데모 테스트 후 교육 없이 입점 가능</p>
 </section>
 
-<section class="slide" data-ch="06 전문점 안내">
+<section class="slide" data-ch="06 전문점 · 가격">
   <div class="eyebrow">BASIC STRUCTURE</div>
   <h2>일반 납품샵과 전문점은 별도 자격입니다</h2>
   <div class="body">
@@ -1135,7 +1065,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </div>
 </section>
 
-<section class="slide" data-ch="06 전문점 안내">
+<section class="slide" data-ch="06 전문점 · 가격">
   <div class="eyebrow">REGISTRATION</div>
   <h2>등록 절차 — 전문점 세트 구매 전에 지역을 먼저 확인합니다</h2>
   <div class="body">
@@ -1157,7 +1087,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </div>
 </section>
 
-<section class="slide" data-ch="06 전문점 안내">
+<section class="slide" data-ch="06 전문점 · 가격">
   <div class="eyebrow">EDUCATION & KIT</div>
   <h2>전문점 최초 등록 구성</h2>
   <div class="body"><div class="grid g4">
@@ -1169,7 +1099,63 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   <div class="callout">세트 결제만으로 전문점 자격이나 지역 보호가 <b>자동 시작되지는 않습니다</b> — 지역 심사와 교육 수료 후 본사 등록으로 시작됩니다.</div></div>
 </section>
 
-<section class="slide" data-ch="06 전문점 안내">
+<section class="slide" data-ch="06 전문점 · 가격">
+  <div class="eyebrow">PRINCIPLES</div>
+  <h2>8년간 무너지지 않은 가격과 유통</h2>
+  <div class="body"><div class="grid g3">
+    <div class="card"><div class="stat-n">8<small>년</small></div><h3>가격 · 유통 질서 유지</h3><p>가격이 무너진 적도, 유통 질서가 무너진 적도 없습니다.</p></div>
+    <div class="card"><div class="stat-n">0<small>건</small></div><h3>인플루언서 공동구매</h3><p>전문가 라인의 가치를 지키기 위해 공구 제안은 모두 거절해 왔습니다.</p></div>
+    <div class="card"><div class="stat-n">5<small>년+</small></div><h3>가격 변동 없음</h3><p>메인 제품 블루 · 핑크는 2021년부터 지금까지, 단종 계획 없음.</p></div>
+    <div class="card"><h3>개발자 공개 브랜드</h3><p>연구자와 개발자가 공개된 브랜드 — 인스타그램 <b>@dr.bae_medical</b></p></div>
+    <div class="card"><h3>선진 메디컬 시장 수출</h3><p>유럽 등 해외 전문가 시장으로 수출 · 교육</p></div>
+    <div class="card navy"><h3>원장님을 지역 전문가로</h3><p>원장님이 검증 가능한 제품을 골랐다는 사실 자체가 샵의 전문성과 브랜딩이 됩니다.</p></div>
+  </div></div>
+</section>
+
+<section class="slide" data-ch="06 전문점 · 가격">
+  <div class="eyebrow">CASE 1 · CASE 2</div>
+  <h2>피부 교육 세트 구성</h2>
+  <div class="cmp-row" style="flex:1">
+    <div class="card"><span class="tag gold">CASE 1 · 피부 교육 기본 세트</span><div class="stat-n" style="margin-top:.3em">50<small>만원</small></div>
+      <p>마이크로젝션 입점 전, 기본 피부 프로그램과 제품 교육</p>
+      <ul class="pts sm"><li>리퀴드 마스크 · 블루 · 핑크 · 토코 · 칼리 각 1박스</li><li>에센스 겔 150ml 1개 + 500ml 1개</li><li>피부 교육 + 멘토링 · 마이크로젝션 미포함(체험 가능)</li></ul>
+      <table class="t" style="font-size:.85em"><tr><td>기존 구매 기준가</td><td class="r">763,500원</td></tr><tr><td>제품 혜택</td><td class="r">263,500원</td></tr><tr class="sum"><td>실질 할인율</td><td class="r">약 34.5%</td></tr></table></div>
+    <div class="card navy"><span class="tag gold">CASE 2 · 피부 전문 + 마이크로젝션</span><div class="stat-n" style="margin-top:.3em;color:var(--gold-lt)">150<small>만원</small></div>
+      <p>피부 전문교육 + 멘토링 · 마이크로젝션 포함 + 입점</p>
+      <ul class="pts sm" style="color:#dce9f7"><li style="color:#dce9f7">리퀴드 마스크 · 블루 · 핑크 · 토코 각 2박스, 칼리 1박스</li><li style="color:#dce9f7">에센스 겔 500ml 18개 · 마이크로젝션 2박스(10개) · 에어건 1개</li><li style="color:#dce9f7">CASE 1 수료 시 <b>100만원 추가</b>로 업그레이드</li></ul>
+      <table class="t" style="font-size:.85em"><tr><td>기존 프로모션 기준가</td><td class="r">2,084,000원</td></tr><tr><td>제품 혜택</td><td class="r">584,000원</td></tr><tr class="sum"><td>실질 할인율</td><td class="r">약 28.0%</td></tr></table></div>
+  </div>
+</section>
+
+<section class="slide" data-ch="06 전문점 · 가격">
+  <div class="eyebrow">SCALP OPTIONS</div>
+  <h2>두피 구성 — CASE 2 두피 추가 · CASE 3 두피 전문</h2>
+  <div class="cmp-row" style="flex:1">
+    <div class="card"><span class="tag gold">CASE 2 옵션 · 두피 교육 추가</span><div class="stat-n" style="margin-top:.3em">+50<small>만원</small></div>
+      <ul class="pts sm"><li>블랙 포 스칼프 1박스</li><li>마이크로블랙 두피 샴푸 500ml 18개</li><li>스칼프 부스터 500ml 1개</li><li>추가 두피 교육 + 멘토링 · 마이크로젝션 · 에어건은 CASE 2 활용</li></ul>
+      <table class="t" style="font-size:.85em"><tr><td>기존 프로모션 기준가</td><td class="r">619,900원</td></tr><tr><td>제품 혜택</td><td class="r">119,900원 (약 19.3%)</td></tr><tr class="sum"><td>피부 + 두피 통합 총 200만원</td><td class="r">제품가치 2,703,900원 · 약 26.0%</td></tr></table></div>
+    <div class="card"><span class="tag gold">CASE 3 · 두피 전문 + 마이크로젝션</span><div class="stat-n" style="margin-top:.3em">150<small>만원</small></div>
+      <p>두피 전문점 · 미용실 등 두피 프로그램만 운영하는 곳</p>
+      <ul class="pts sm"><li>두피 샴푸 18개 · 스칼프 부스터 18개</li><li>블랙 포 스칼프 2박스 · 토코 1박스 · 칼리 1박스</li><li>마이크로젝션 4박스(20개) · 에어건 1개</li></ul>
+      <table class="t" style="font-size:.85em"><tr><td>기존 프로모션 기준가</td><td class="r">1,928,500원</td></tr><tr><td>제품 혜택</td><td class="r">428,500원</td></tr><tr class="sum"><td>실질 할인율</td><td class="r">약 22.2%</td></tr></table></div>
+  </div>
+</section>
+
+<section class="slide" data-ch="06 전문점 · 가격">
+  <div class="eyebrow">SUMMARY</div>
+  <h2>구성별 최종 비교</h2>
+  <div class="body"><table class="t" style="font-size:1.05em">
+    <tr><th>구분</th><th class="r">결제금액</th><th class="r">기존 프로모션 기준가</th><th class="r">제품 혜택</th><th class="r">실질 할인율</th><th class="c">마이크로젝션</th></tr>
+    <tr><td><b>CASE 1</b> 피부 기본</td><td class="r hl">50만원</td><td class="r">763,500원</td><td class="r">263,500원</td><td class="r bl">34.5%</td><td class="c">미포함</td></tr>
+    <tr><td><b>CASE 2</b> 피부 전문</td><td class="r hl">150만원</td><td class="r">2,084,000원</td><td class="r">584,000원</td><td class="r bl">28.0%</td><td class="c">포함</td></tr>
+    <tr><td><b>CASE 2 + 두피</b></td><td class="r hl">+50만원</td><td class="r">619,900원</td><td class="r">119,900원</td><td class="r bl">19.3%</td><td class="c">CASE 2 활용</td></tr>
+    <tr class="sum"><td><b>피부 + 두피 통합</b></td><td class="r">총 200만원</td><td class="r">2,703,900원</td><td class="r">703,900원</td><td class="r">26.0%</td><td class="c">포함</td></tr>
+    <tr><td><b>CASE 3</b> 두피 전문</td><td class="r hl">150만원</td><td class="r">1,928,500원</td><td class="r">428,500원</td><td class="r bl">22.2%</td><td class="c">포함</td></tr>
+  </table>
+  <div class="callout">할인율은 18개 박스 프로모션 · 3+1 등 <b>기존 프로모션가를 반영한 실질 할인율</b> 기준입니다. 전문점 등록은 반경 2km 지역 심사 후 진행됩니다.</div></div>
+</section>
+
+<section class="slide" data-ch="06 전문점 · 가격">
   <div class="eyebrow">BENEFITS</div>
   <h2>전문점에는 지속적인 구매 혜택을 제공합니다</h2>
   <div class="body"><div class="grid g4">
@@ -1184,7 +1170,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </div></div>
 </section>
 
-<section class="slide" data-ch="06 전문점 안내">
+<section class="slide" data-ch="06 전문점 · 가격">
   <div class="eyebrow">AREA PROTECTION</div>
   <h2>지역 보호 — 피부 · 두피 보호권은 각각 독립적입니다</h2>
   <div class="body">
@@ -1200,7 +1186,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </div>
 </section>
 
-<section class="slide" data-ch="06 전문점 안내">
+<section class="slide" data-ch="06 전문점 · 가격">
   <div class="eyebrow">MAINTENANCE</div>
   <h2>유지 조건 — 구매실적과 월별 홍보활동을 모두 충족</h2>
   <div class="body"><div class="grid g2">
@@ -1214,7 +1200,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   </div></div>
 </section>
 
-<section class="slide" data-ch="06 전문점 안내">
+<section class="slide" data-ch="06 전문점 · 가격">
   <div class="eyebrow">SEASON 1</div>
   <h2>시즌 1 시범 운영 · 자격 종료와 유지 항목</h2>
   <div class="body"><div class="grid g3">
@@ -1225,17 +1211,68 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   <div class="callout">기본 원칙은 <b>마이크로젝션을 먼저 도입하고 적극적으로 활용하는 샵을 우대</b>하는 것입니다. 첫 시행인 만큼 규정과 혜택은 보완 · 업데이트될 수 있으며 사전에 안내드립니다.</div></div>
 </section>
 
-<!-- ================= PART 07 · 가격 ================= -->
-<section class="slide dark" data-ch="07 가격 구성">
-  <div class="eyebrow">PART 07</div>
-  <h1 style="margin-top:.3em">가격 구성</h1>
-  <div class="rule"></div>
-  <div class="sub" style="font-size:1.35em">닥터배 국내 에스테틱 공급가 · 전문점 구성</div>
-  <div class="sub" style="font-size:1em;margin-top:1.4em;color:var(--key);font-weight:700">올바른 에스테틱 유통 문화를 위해 — 공유 및 온라인 / 오프라인 노출 금지</div>
-  <div class="sec-num">07</div>
+<section class="slide" data-ch="06 전문점 · 가격">
+  <div class="eyebrow">GET STARTED</div>
+  <h2>닥터배 시작하기 — 데모 신청부터 주문까지</h2>
+  <div class="body"><div class="gs">
+    <div class="gs-note">🔒 <b>공유하지 말아 주세요.</b> 구매 · 납품 링크는 사업자 등록을 마치신 <b>정식 원장님께만</b> 안내드립니다. 건전한 유통 문화를 위해 단톡방 · 중고거래 · SNS 등 외부 공유는 삼가 주세요.</div>
+    <a class="gs-card first" href="https://m.site.naver.com/2aTLN" target="_blank" rel="noopener"><div class="gs-step">STEP<b>1</b></div><div class="gs-body"><h3>데모키트로 먼저 테스트</h3><p>정식 도입 전, 제품을 직접 써 보실 수 있는 소량 구성입니다.</p><span class="gs-pill">여기서 시작하세요</span></div><div class="gs-go">›</div></a>
+    <a class="gs-card" href="https://smartstore.naver.com/drbae/products/6338720100" target="_blank" rel="noopener"><div class="gs-step">STEP<b>2</b></div><div class="gs-body"><h3>정식 납품 주문</h3><p>데모를 써 보시고 마음에 드시면, 이 링크로 정식 납품을 진행합니다.</p><span class="gs-pill">가격 · 프로모션 구성 안내</span></div><div class="gs-go">›</div></a>
+    <a class="gs-card" href="https://m.site.naver.com/2aTWX" target="_blank" rel="noopener"><div class="gs-step">STEP<b>3</b></div><div class="gs-body"><h3>원장님들의 후기 참고</h3><p>이미 사용 중인 원장님들의 후기입니다. 프로그램 구성에 참고하세요.</p><span class="gs-pill">참고 자료</span></div><div class="gs-go">›</div></a>
+    <div class="gs-foot">STEP 1 · 2 · 3 링크는 모두 <b>네이버 스마트스토어</b>로 연결됩니다. 그 밖의 문의는 인스타그램 <a href="https://www.instagram.com/dr.bae_medical/" target="_blank" rel="noopener">@dr.bae_medical</a> DM으로 주세요. · 마이크로젝션은 공인 파트너 교육 후 납품됩니다.</div>
+  </div></div>
 </section>
 
-<section class="slide" data-ch="07 가격 구성">
+<section class="slide dark" data-ch="마무리">
+  <div class="eyebrow">THANK YOU</div>
+  <div class="sub" style="font-size:1.25em;margin-top:.6em;line-height:1.5"><b style="color:var(--navy)">‘고부가가치 스킨부스터 관리’</b>를 에스테틱에서 <span style="color:var(--key);font-weight:800">합법적으로, 그리고 효과적으로.</span></div>
+  <div class="big-quote" style="margin-top:.5em">스킨 롱제비티, 거부할 수 없는 새로운 시대의 트렌드.<br><em>전문가용 브랜드 닥터배</em>가 함께 서포트하겠습니다.</div>
+  <div class="rule"></div>
+  <div class="sub" style="font-size:1.25em">DR.BAE · ㈜배랩 × 숭실대학교 의공학 연구실</div>
+  <div class="sub" style="font-size:1.1em">문의 · 인스타그램 @dr.bae_medical · 공인 파트너 멘토링 신청</div>
+  <div class="sub" style="font-size:.85em;margin-top:2em">본 자료는 화장품 표시 · 광고법 및 공중위생관리법 범위에서 작성되었으며, 의약품적 효능 · 효과를 표방하지 않습니다.</div>
+</section>
+
+<section class="slide dark" data-ch="부록 · 질문 대응">
+  <div class="eyebrow">APPENDIX</div>
+  <h1 style="margin-top:.3em">부록 · 질문 대응 자료</h1>
+  <div class="rule"></div>
+  <div class="sub" style="font-size:1.35em">전성분 상세 · 스탬프 결합표 · 제품별 공급가</div>
+  <div class="sec-num">A</div>
+</section>
+
+<section class="slide" data-ch="부록 · 질문 대응">
+  <div class="eyebrow">AMPOULE PAIRING</div>
+  <h2>스탬프 결합은 ‘성분’이 아니라 ‘점도’가 결정합니다</h2>
+  <div class="body">
+    <table class="t">
+      <tr><th>제품</th><th>제형</th><th class="c">스탬프 결합</th><th>운용 위치</th></tr>
+      <tr><td><b>엑소토카인 블루</b></td><td>점성 있는 앰플</td><td class="c"><span class="tag ok">가능</span></td><td>스탬핑 메인 — 안티에이징 지향</td></tr>
+      <tr><td><b>피디로엔 핑크</b></td><td>점성 있는 앰플</td><td class="c"><span class="tag ok">가능</span></td><td>스탬핑 메인 — 진정 · 밸런싱 지향</td></tr>
+      <tr><td><b>칼리파우더</b></td><td>동결건조 파우더</td><td class="c"><span class="tag gold">간접</span></td><td>블루 · 핑크에 용해 후 스탬핑 / 토코포르테에 용해 후 에어건 — 업셀</td></tr>
+      <tr><td><b>엑소토카인 토코포르테</b></td><td>저점도 액상</td><td class="c"><span class="tag no">불가</span></td><td>스탬핑 전후 케어 — 에어건 · 손 도포</td></tr>
+      <tr><td><b>엑소토카인 에센스 겔</b></td><td>카보머 겔</td><td class="c"><span class="tag no">불가</span></td><td>매뉴얼 베이스 + 마무리 진정</td></tr>
+      <tr><td><b>엑소토카인 리퀴드 마스크</b></td><td>소프트필 앰플</td><td class="c"><span class="tag no">불가</span></td><td>세션 분리 — 별도 필 관리 회차</td></tr>
+      <tr><td><b>엑소토카인 블랙 포 스칼프</b></td><td>점성 있는 앰플</td><td class="c"><span class="tag ok">두피</span></td><td>두피 라인 스탬핑 메인 (멘톨 함유 — 얼굴 사용 금지)</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="slide" data-ch="부록 · 질문 대응">
+  <div class="eyebrow">FACE · INGREDIENT DOSSIER</div>
+  <h2>페이스 6종 — 전성분으로 읽는 제품 설계</h2>
+  <p class="kicker" style="font-size:.9em">제품을 누르면 전성분 기반 상세 설명이 팝업으로 열립니다. 질문이 나오면 이 화면에서 바로 보여주세요.</p>
+  <div class="pgrid"><button class="ptile" data-pd="blue"><span class="acc-img"><img src="assets/prod/blue.webp" alt=""></span><span class="acc-txt"><span class="acc-name">엑소토카인 블루</span><span class="acc-tag">페이스 메인 부스팅</span></span><span class="acc-btn"></span></button><button class="ptile" data-pd="pink"><span class="acc-img"><img src="assets/prod/pink.webp" alt=""></span><span class="acc-txt"><span class="acc-name">피디로엔 핑크</span><span class="acc-tag">진정 · 장벽 케어</span></span><span class="acc-btn"></span></button><button class="ptile" data-pd="liquidmask"><span class="acc-img"><img src="assets/prod/liquidmask.webp" alt=""></span><span class="acc-txt"><span class="acc-name">엑소토카인 리퀴드 마스크</span><span class="acc-tag">소프트 필링 · No-Rinse</span></span><span class="acc-btn"></span></button><button class="ptile" data-pd="toco"><span class="acc-img"><img src="assets/prod/toco.webp" alt=""></span><span class="acc-txt"><span class="acc-name">토코포르테 브라운</span><span class="acc-tag">페이스 + 두피 · 쿨링</span></span><span class="acc-btn"></span></button><button class="ptile" data-pd="cali"><span class="acc-img"><img src="assets/prod/cali.webp" alt=""></span><span class="acc-txt"><span class="acc-name">칼리파우더</span><span class="acc-tag">동결건조 · 무방부</span></span><span class="acc-btn"></span></button><button class="ptile" data-pd="gel500"><span class="acc-img"><img src="assets/prod/gel500.webp" alt=""></span><span class="acc-txt"><span class="acc-name">에센스겔 500ml / 150ml</span><span class="acc-tag">매뉴얼 베이스 · 샵 필수템</span></span><span class="acc-btn"></span></button></div>
+</section>
+
+<section class="slide" data-ch="부록 · 질문 대응">
+  <div class="eyebrow">SCALP · INGREDIENT DOSSIER</div>
+  <h2>두피 3종 — 전성분으로 읽는 제품 설계</h2>
+  <p class="kicker" style="font-size:.9em">제품을 누르면 전성분 기반 상세 설명이 팝업으로 열립니다. 질문이 나오면 이 화면에서 바로 보여주세요.</p>
+  <div class="pgrid"><button class="ptile" data-pd="black"><span class="acc-img"><img src="assets/prod/black.webp" alt=""></span><span class="acc-txt"><span class="acc-name">엑소토카인 블랙 포 스칼프</span><span class="acc-tag">두피 전용 앰플</span></span><span class="acc-btn"></span></button><button class="ptile" data-pd="shampoo"><span class="acc-img"><img src="assets/prod/shampoo.webp" alt=""></span><span class="acc-txt"><span class="acc-name">엑소토카인 샴푸 500ml</span><span class="acc-tag">홈케어 · Rinse-off</span></span><span class="acc-btn"></span></button><button class="ptile" data-pd="scalpbooster"><span class="acc-img"><img src="assets/prod/scalpbooster.webp" alt=""></span><span class="acc-txt"><span class="acc-name">스칼프 부스터 500ml</span><span class="acc-tag">Leave-on · 샵 전용</span></span><span class="acc-btn"></span></button></div>
+</section>
+
+<section class="slide" data-ch="부록 · 질문 대응">
   <div class="eyebrow">AMPOULE LINE</div>
   <h2>앰플 라인 공급가</h2>
   <div class="body"><table class="t">
@@ -1249,7 +1286,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   <div class="callout">프로모션 3+1(25%) 적용 시 1박스 — 리퀴드 마스크 145,125원 · 블루 / 핑크 / 토코 / 칼리 96,750원</div></div>
 </section>
 
-<section class="slide" data-ch="07 가격 구성">
+<section class="slide" data-ch="부록 · 질문 대응">
   <div class="eyebrow">SCALP · GEL · DEVICE</div>
   <h2>두피 · 겔 · 디바이스 공급가</h2>
   <div class="body"><table class="t" style="font-size:.9em">
@@ -1263,61 +1300,6 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
     <tr><td><img class="pi" src="assets/prod/airgun.webp" alt=""><b>마이크로블랙 에어건</b></td><td>1개</td><td class="r">전문가용</td><td class="r">68,000</td><td class="r hl">50,000</td><td class="c">—</td><td class="r">—</td></tr>
   </table></div>
 </section>
-
-<section class="slide" data-ch="07 가격 구성">
-  <div class="eyebrow">CASE 1 · CASE 2</div>
-  <h2>피부 교육 세트 구성</h2>
-  <div class="cmp-row" style="flex:1">
-    <div class="card"><span class="tag gold">CASE 1 · 피부 교육 기본 세트</span><div class="stat-n" style="margin-top:.3em">50<small>만원</small></div>
-      <p>마이크로젝션 입점 전, 기본 피부 프로그램과 제품 교육</p>
-      <ul class="pts sm"><li>리퀴드 마스크 · 블루 · 핑크 · 토코 · 칼리 각 1박스</li><li>에센스 겔 150ml 1개 + 500ml 1개</li><li>피부 교육 + 멘토링 · 마이크로젝션 미포함(체험 가능)</li></ul>
-      <table class="t" style="font-size:.85em"><tr><td>기존 구매 기준가</td><td class="r">763,500원</td></tr><tr><td>제품 혜택</td><td class="r">263,500원</td></tr><tr class="sum"><td>실질 할인율</td><td class="r">약 34.5%</td></tr></table></div>
-    <div class="card navy"><span class="tag gold">CASE 2 · 피부 전문 + 마이크로젝션</span><div class="stat-n" style="margin-top:.3em;color:var(--gold-lt)">150<small>만원</small></div>
-      <p>피부 전문교육 + 멘토링 · 마이크로젝션 포함 + 입점</p>
-      <ul class="pts sm" style="color:#dce9f7"><li style="color:#dce9f7">리퀴드 마스크 · 블루 · 핑크 · 토코 각 2박스, 칼리 1박스</li><li style="color:#dce9f7">에센스 겔 500ml 18개 · 마이크로젝션 2박스(10개) · 에어건 1개</li><li style="color:#dce9f7">CASE 1 수료 시 <b>100만원 추가</b>로 업그레이드</li></ul>
-      <table class="t" style="font-size:.85em"><tr><td>기존 프로모션 기준가</td><td class="r">2,084,000원</td></tr><tr><td>제품 혜택</td><td class="r">584,000원</td></tr><tr class="sum"><td>실질 할인율</td><td class="r">약 28.0%</td></tr></table></div>
-  </div>
-</section>
-
-<section class="slide" data-ch="07 가격 구성">
-  <div class="eyebrow">SCALP OPTIONS</div>
-  <h2>두피 구성 — CASE 2 두피 추가 · CASE 3 두피 전문</h2>
-  <div class="cmp-row" style="flex:1">
-    <div class="card"><span class="tag gold">CASE 2 옵션 · 두피 교육 추가</span><div class="stat-n" style="margin-top:.3em">+50<small>만원</small></div>
-      <ul class="pts sm"><li>블랙 포 스칼프 1박스</li><li>마이크로블랙 두피 샴푸 500ml 18개</li><li>스칼프 부스터 500ml 1개</li><li>추가 두피 교육 + 멘토링 · 마이크로젝션 · 에어건은 CASE 2 활용</li></ul>
-      <table class="t" style="font-size:.85em"><tr><td>기존 프로모션 기준가</td><td class="r">619,900원</td></tr><tr><td>제품 혜택</td><td class="r">119,900원 (약 19.3%)</td></tr><tr class="sum"><td>피부 + 두피 통합 총 200만원</td><td class="r">제품가치 2,703,900원 · 약 26.0%</td></tr></table></div>
-    <div class="card"><span class="tag gold">CASE 3 · 두피 전문 + 마이크로젝션</span><div class="stat-n" style="margin-top:.3em">150<small>만원</small></div>
-      <p>두피 전문점 · 미용실 등 두피 프로그램만 운영하는 곳</p>
-      <ul class="pts sm"><li>두피 샴푸 18개 · 스칼프 부스터 18개</li><li>블랙 포 스칼프 2박스 · 토코 1박스 · 칼리 1박스</li><li>마이크로젝션 4박스(20개) · 에어건 1개</li></ul>
-      <table class="t" style="font-size:.85em"><tr><td>기존 프로모션 기준가</td><td class="r">1,928,500원</td></tr><tr><td>제품 혜택</td><td class="r">428,500원</td></tr><tr class="sum"><td>실질 할인율</td><td class="r">약 22.2%</td></tr></table></div>
-  </div>
-</section>
-
-<section class="slide" data-ch="07 가격 구성">
-  <div class="eyebrow">SUMMARY</div>
-  <h2>구성별 최종 비교</h2>
-  <div class="body"><table class="t" style="font-size:1.05em">
-    <tr><th>구분</th><th class="r">결제금액</th><th class="r">기존 프로모션 기준가</th><th class="r">제품 혜택</th><th class="r">실질 할인율</th><th class="c">마이크로젝션</th></tr>
-    <tr><td><b>CASE 1</b> 피부 기본</td><td class="r hl">50만원</td><td class="r">763,500원</td><td class="r">263,500원</td><td class="r bl">34.5%</td><td class="c">미포함</td></tr>
-    <tr><td><b>CASE 2</b> 피부 전문</td><td class="r hl">150만원</td><td class="r">2,084,000원</td><td class="r">584,000원</td><td class="r bl">28.0%</td><td class="c">포함</td></tr>
-    <tr><td><b>CASE 2 + 두피</b></td><td class="r hl">+50만원</td><td class="r">619,900원</td><td class="r">119,900원</td><td class="r bl">19.3%</td><td class="c">CASE 2 활용</td></tr>
-    <tr class="sum"><td><b>피부 + 두피 통합</b></td><td class="r">총 200만원</td><td class="r">2,703,900원</td><td class="r">703,900원</td><td class="r">26.0%</td><td class="c">포함</td></tr>
-    <tr><td><b>CASE 3</b> 두피 전문</td><td class="r hl">150만원</td><td class="r">1,928,500원</td><td class="r">428,500원</td><td class="r bl">22.2%</td><td class="c">포함</td></tr>
-  </table>
-  <div class="callout">할인율은 18개 박스 프로모션 · 3+1 등 <b>기존 프로모션가를 반영한 실질 할인율</b> 기준입니다. 전문점 등록은 반경 2km 지역 심사 후 진행됩니다.</div></div>
-</section>
-
-<!-- 마무리 -->
-<section class="slide dark" data-ch="마무리">
-  <div class="eyebrow">THANK YOU</div>
-  <div class="sub" style="font-size:1.25em;margin-top:.6em;line-height:1.5"><b style="color:var(--navy)">‘고부가가치 스킨부스터 관리’</b>를 에스테틱에서 <span style="color:var(--key);font-weight:800">합법적으로, 그리고 효과적으로.</span></div>
-  <div class="big-quote" style="margin-top:.5em">스킨 롱제비티, 거부할 수 없는 새로운 시대의 트렌드.<br><em>전문가용 브랜드 닥터배</em>가 함께 서포트하겠습니다.</div>
-  <div class="rule"></div>
-  <div class="sub" style="font-size:1.25em">DR.BAE · ㈜배랩 × 숭실대학교 의공학 연구실</div>
-  <div class="sub" style="font-size:1.1em">문의 · 인스타그램 @dr.bae_medical · 공인 파트너 멘토링 신청</div>
-  <div class="sub" style="font-size:.85em;margin-top:2em">본 자료는 화장품 표시 · 광고법 및 공중위생관리법 범위에서 작성되었으며, 의약품적 효능 · 효과를 표방하지 않습니다.</div>
-</section>
-
 </div>
 
 
