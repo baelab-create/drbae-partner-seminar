@@ -291,6 +291,12 @@ a.gs-card:hover{box-shadow:.7em .7em 1.4em var(--neu-dark),-.7em -.7em 1.4em var
 #bar{background:var(--key);}
 #ctl button,#ctl select,#ctl span{background:rgba(31,58,92,.92);}
 #hint{background:rgba(31,58,92,.94);}
+
+/* split 열 폭 고정 — 글자 자동 확대가 사진 칸을 밀어내지 못하게 */
+.split{grid-template-columns:minmax(0,1fr) minmax(0,1fr);}
+.split.wide{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);}
+.split.narrow{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);}
+.split.hero{grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);}
 </style>
 </head>
 <body>
@@ -523,21 +529,21 @@ a.gs-card:hover{box-shadow:.7em .7em 1.4em var(--neu-dark),-.7em -.7em 1.4em var
 <section class="slide" data-ch="03 마이크로젝션">
   <div class="eyebrow">THE NAME</div>
   <h2>MICRO + PROJECTION — INJECTION이 아닙니다</h2>
-  <div class="split">
-    <div>
-      <div class="grid g3" style="margin-top:0">
-        <div class="card tight" style="text-align:center"><div class="stat-n" style="font-size:1.6em">MICRO</div><p>미세 단위의 구조</p></div>
-        <div class="card tight" style="text-align:center"><div class="stat-n" style="font-size:1.6em">PROJECTION</div><p>돌출 · 투사 (관통 아님)</p></div>
-        <div class="card tight navy" style="text-align:center"><div class="stat-n" style="font-size:1.6em;color:var(--gold-lt)">MICROJECTION</div><p>고르게 밀착 · 도포</p></div>
-      </div>
-      <ul class="pts">
-        <li>아크릴 · 플라스틱 소재, <b>끝단 평면 가공(flat-tip)</b> — 금속 침이 아닙니다</li>
-        <li>앰플 바이알에 직접 결합해 <b>도장처럼 수직으로 눌러</b> 사용</li>
-        <li>구조적으로 각질층을 관통할 수 없는 <b>화장품 도포 보조 기기</b></li>
-      </ul>
-      <div class="callout red"><b>✕ 주사 · ✕ 니들링 · ✕ 주입</b> — “주사기처럼 넣는다”, “MTS와 같은 원리”라는 설명은 사실과 다르고, 관리실에서 쓸 수 있는 근거 자체를 무너뜨립니다.</div>
-    </div>
+  <div class="split hero">
     <div class="imgbox"><img src="assets/img/mj-stamp.jpg" alt="마이크로젝션 더마 스탬프"></div>
+    <div>
+      <div class="grid g3" style="margin-top:0;gap:.6em">
+        <div class="card tight" style="text-align:center;padding:.8em .4em"><div class="stat-n" style="font-size:1.05em">MICRO</div><p style="font-size:.8em">미세 구조</p></div>
+        <div class="card tight" style="text-align:center;padding:.8em .4em"><div class="stat-n" style="font-size:1.05em">PROJECTION</div><p style="font-size:.8em">돌출 · 투사</p></div>
+        <div class="card tight navy" style="text-align:center;padding:.8em .4em"><div class="stat-n" style="font-size:1.05em">= MICRO<br>JECTION</div></div>
+      </div>
+      <ul class="pts sm">
+        <li>아크릴 · 플라스틱, <b>끝단 평면 가공(flat-tip)</b> — 금속 침 아님</li>
+        <li>앰플 바이알에 결합해 <b>도장처럼 수직으로</b> 누름</li>
+        <li>각질층을 관통할 수 없는 <b>화장품 도포 보조 기기</b></li>
+      </ul>
+      <div class="callout red" style="font-size:.88em"><b>✕ 주사 · ✕ 니들링 · ✕ 주입</b> — “MTS와 같은 원리” 설명은 관리실 사용 근거를 무너뜨립니다.</div>
+    </div>
   </div>
 </section>
 
@@ -557,7 +563,7 @@ a.gs-card:hover{box-shadow:.7em .7em 1.4em var(--neu-dark),-.7em -.7em 1.4em var
 <section class="slide" data-ch="03 마이크로젝션">
   <div class="eyebrow">HOW IT WORKS</div>
   <h2>뚫지 않고, 모세관력으로 고르게</h2>
-  <div class="split wide">
+  <div class="split hero">
     <div class="imgbox"><img src="assets/img/mj-mechanism.jpg" alt="스탬핑 전 · 중 · 후 각질층 모식도"></div>
     <div>
       <div class="step"><div class="n">1</div><div><h3>Micro-Stamping · 균일 밀착</h3><p>수백 개의 미세 돌출 구조가 피부 굴곡까지 빈틈없이 접촉 — 앰플이 뭉치지 않고 고르게 분포합니다.</p></div></div>
@@ -831,7 +837,7 @@ a.gs-card:hover{box-shadow:.7em .7em 1.4em var(--neu-dark),-.7em -.7em 1.4em var
 <section class="slide" data-ch="05 제품 라인업">
   <div class="eyebrow">LINE-UP</div>
   <h2>하나의 코어 원료 위에, 서로 다른 역할을</h2>
-  <div class="split wide">
+  <div class="split hero">
     <div class="imgbox"><img src="assets/hero-lineup.jpg" alt="닥터배 라인업"></div>
     <div>
       <ul class="pts">
