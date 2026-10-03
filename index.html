@@ -362,6 +362,19 @@ table.t td .pi{background:#fff;border-radius:.4em;padding:.15em .3em;box-shadow:
 .pd-body .pd-head .acc-name{font-size:1.6em;}
 .pd-body .pd-head .acc-btn{display:none;}
 .pd-body .acc-panel{display:block !important;flex:1;min-height:0;overflow:auto;padding:1em 0 0;font-size:1em;background:none;box-shadow:none;}
+
+/* 단계 번호 — 원형 뉴모픽 배지 (찌그러짐 방지) */
+.flow .step{gap:.7em;}
+.flow .step .n{flex:none;width:2.6em;height:2.6em;border-radius:50%;background:var(--neu-bg);color:var(--navy);font-size:.95em;font-weight:900;box-shadow:var(--neu-in-sm);letter-spacing:-.02em;}
+.flow .step:last-child .n{background:var(--navy);color:#fff;box-shadow:var(--neu-out-sm);}
+.flow.grid7 .step{flex-direction:row;align-items:center;padding:1em 1.1em;}
+.flow.grid7 .step > div:not(.n){min-width:0;}
+.flow.grid7 .step .n{width:3em;height:3em;font-size:1.05em;}
+.flow.grid7 .step h3{font-size:1.02em;}
+.flow.grid7 .step p{margin-top:.15em;}
+.flow.grid7 .step.total{background:var(--navy);box-shadow:var(--neu-out);}
+.flow.grid7 .step.total h3{color:#fff;} .flow.grid7 .step.total p{color:#CFC9BC;}
+.flow.grid7 .step.total .n{background:var(--key);color:#fff;box-shadow:none;font-size:.8em;}
 </style>
 </head>
 <body>
@@ -998,13 +1011,14 @@ table.t td .pi{background:#fff;border-radius:.4em;padding:.15em .3em;box-shadow:
   <div class="eyebrow">STARTER PROGRAM</div>
   <h2>처음 도입하는 샵을 위한 기본 프로그램 7단계 (약 50~60분)</h2>
   <div class="body"><div class="flow grid7">
-    <div class="step"><div class="n">1</div><h3>클렌징 · 컨디션 체크</h3></div><div class="arrow">›</div>
-    <div class="step"><div class="n">2</div><h3>소프트필</h3><p>리퀴드 마스크</p></div><div class="arrow">›</div>
-    <div class="step"><div class="n">3</div><h3>부스팅</h3><p>블루 + 초음파 · 갈바닉</p></div><div class="arrow">›</div>
-    <div class="step"><div class="n">4</div><h3>진정팩</h3><p>핑크 (+ 에센스 겔) · LED</p></div><div class="arrow">›</div>
-    <div class="step"><div class="n">5</div><h3>데콜테</h3><p>에센스 겔 매뉴얼</p></div><div class="arrow">›</div>
-    <div class="step"><div class="n">6</div><h3>쿨링 피날레</h3><p>토코포르테 에어건</p></div><div class="arrow">›</div>
-    <div class="step"><div class="n">7</div><h3>마무리 · 홈케어</h3></div>
+    <div class="step"><div class="n">01</div><div><h3>클렌징 · 컨디션 체크</h3></div></div><div class="arrow">›</div>
+    <div class="step"><div class="n">02</div><div><h3>소프트필</h3><p>리퀴드 마스크</p></div></div><div class="arrow">›</div>
+    <div class="step"><div class="n">03</div><div><h3>부스팅</h3><p>블루 + 초음파 · 갈바닉</p></div></div><div class="arrow">›</div>
+    <div class="step"><div class="n">04</div><div><h3>진정팩</h3><p>핑크 (+ 에센스 겔) · LED</p></div></div><div class="arrow">›</div>
+    <div class="step"><div class="n">05</div><div><h3>데콜테</h3><p>에센스 겔 매뉴얼</p></div></div><div class="arrow">›</div>
+    <div class="step"><div class="n">06</div><div><h3>쿨링 피날레</h3><p>토코포르테 에어건</p></div></div><div class="arrow">›</div>
+    <div class="step"><div class="n">07</div><div><h3>마무리 · 홈케어</h3></div></div>
+    <div class="step total"><div class="n">TOTAL</div><div><h3>약 50~60분</h3><p>진정 기본케어 · 초음파 · 갈바닉 범위</p></div></div>
   </div>
   <div class="grid g3">
     <div class="card tight"><h3>바이알은 단회용</h3><p>블루 · 핑크 · 리퀴드 마스크 · 토코 · 칼리 — 개봉 당일 1병 소진</p></div>
@@ -1063,18 +1077,18 @@ table.t td .pi{background:#fff;border-radius:.4em;padding:.15em .3em;box-shadow:
   <div class="body">
     <h3>일반 납품샵</h3>
     <div class="flow" style="margin-top:.6em">
-      <div class="step"><div class="n">1</div><h3>사업자 · 실제 사업장 확인</h3></div><div class="arrow">›</div>
-      <div class="step"><div class="n">2</div><h3>파트너 또는 교수 사전 교육 · 세미나</h3></div><div class="arrow">›</div>
-      <div class="step"><div class="n">3</div><h3>마이크로젝션 최초 구매</h3></div><div class="arrow">›</div>
-      <div class="step"><div class="n">4</div><h3>해당 분야 납품샵 등록</h3></div>
+      <div class="step"><div class="n">01</div><h3>사업자 · 실제 사업장 확인</h3></div><div class="arrow">›</div>
+      <div class="step"><div class="n">02</div><h3>파트너 또는 교수 사전 교육 · 세미나</h3></div><div class="arrow">›</div>
+      <div class="step"><div class="n">03</div><h3>마이크로젝션 최초 구매</h3></div><div class="arrow">›</div>
+      <div class="step"><div class="n">04</div><h3>해당 분야 납품샵 등록</h3></div>
     </div>
     <h3 style="margin-top:1.4em">전문점</h3>
     <div class="flow" style="margin-top:.6em">
-      <div class="step"><div class="n">1</div><h3>사업자 · 주소 · 희망 분야 확인</h3></div><div class="arrow">›</div>
-      <div class="step"><div class="n">2</div><h3>해당 분야 반경 2km 심사</h3></div><div class="arrow">›</div>
-      <div class="step"><div class="n">3</div><h3>전문교육 · 키트 구매 · 수료</h3></div><div class="arrow">›</div>
-      <div class="step"><div class="n">4</div><h3>수료증 발급 · 본사 등록</h3></div><div class="arrow">›</div>
-      <div class="step" style="background:var(--navy)"><div class="n" style="background:var(--gold)">5</div><h3 style="color:#fff">보호 · 혜택 시작</h3></div>
+      <div class="step"><div class="n">01</div><h3>사업자 · 주소 · 희망 분야 확인</h3></div><div class="arrow">›</div>
+      <div class="step"><div class="n">02</div><h3>해당 분야 반경 2km 심사</h3></div><div class="arrow">›</div>
+      <div class="step"><div class="n">03</div><h3>전문교육 · 키트 구매 · 수료</h3></div><div class="arrow">›</div>
+      <div class="step"><div class="n">04</div><h3>수료증 발급 · 본사 등록</h3></div><div class="arrow">›</div>
+      <div class="step" style="background:var(--navy)"><div class="n" style="background:var(--key);color:#fff;box-shadow:none">05</div><h3 style="color:#fff">보호 · 혜택 시작</h3></div>
     </div>
   </div>
 </section>
