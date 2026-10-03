@@ -194,6 +194,103 @@
   .gs-card.first .gs-go{background:var(--red);}
   .gs-foot{font-size:.9em;color:var(--sub);}
   .gs-foot a{color:var(--navy);font-weight:800;text-decoration:none;}
+
+/* ============================================================
+   뉴모픽 스킨 — drbae-guide / drbae-customer 와 동일한 톤
+   모래빛 바탕 #E8E5DF + 밝은/어두운 이중 그림자, 테두리선 없음
+   ============================================================ */
+:root{
+  --neu-bg:#E8E5DF; --neu-light:rgba(255,255,255,.92); --neu-dark:rgba(163,152,136,.52);
+  --neu-out:.5em .5em 1.1em var(--neu-dark),-.5em -.5em 1.1em var(--neu-light);
+  --neu-out-sm:.18em .18em .45em var(--neu-dark),-.18em -.18em .45em var(--neu-light);
+  --neu-in:inset .28em .28em .7em var(--neu-dark),inset -.28em -.28em .7em var(--neu-light);
+  --neu-in-sm:inset .12em .12em .35em var(--neu-dark),inset -.12em -.12em .35em var(--neu-light);
+  --navy:#1F3A5C; --blue:#4E7290; --taupe:#8E8271; --ink:#262624; --sub:#5E5B55;
+  --gold:#8E8271; --gold-ink:#8E8271; --gold-lt:#E8DEC8; --line:#DAD5CB; --sky:#F3F0EB;
+  --key:#B3281E; --red:#B3281E; --red-tint:#F6E9E4; --leaf:#4F7D5C; --leaf-tint:#E9EFE7;
+  --bg:var(--neu-bg); --card:var(--neu-bg);
+}
+body{background:#d9d5cd;}
+.slide{background:var(--neu-bg);color:#3F3D39;}
+.slide.img{background:#fff;}
+.eyebrow{color:var(--taupe);letter-spacing:.2em;}
+.slide h2,.slide h3{color:var(--navy);}
+.rule{background:var(--taupe);height:.12em;width:2.6em;}
+
+/* 섹션 표지 · 인용 — 어두운 그라데이션 대신 모래빛 */
+.slide.dark{background:var(--neu-bg);color:var(--ink);}
+.slide.dark h1,.slide.dark h2{color:var(--navy);}
+.slide.dark .eyebrow{color:var(--taupe);}
+.slide.dark .sub{color:var(--sub);}
+.slide.dark .sub b{color:var(--navy) !important;}
+.slide.dark .big-quote{color:var(--navy);}
+.big-quote em{color:var(--key);}
+.sec-num{color:rgba(163,152,136,.22);}
+.slide.dark .foot{color:var(--taupe);}
+
+/* 떠 있는 판 */
+.card,.prodcard,.step,.imgbox,.partners figure,.ba .pair,a.gs-card,table.t,table.cmp,.gs-note{
+  background:var(--neu-bg);border:0 !important;box-shadow:var(--neu-out);
+}
+.card,.prodcard,.ba .pair,a.gs-card{border-radius:1.4em;}
+.imgbox{border-radius:1.2em;}
+.imgbox.plain{box-shadow:none;background:transparent;}
+.step{box-shadow:var(--neu-out-sm);border-radius:1em;}
+.card[style*="border-top"]{box-shadow:var(--neu-out);}
+.card.navy{background:var(--navy);box-shadow:var(--neu-out);}
+.card.navy p,.card.navy li{color:#CFC9BC !important;}
+.card.navy .stat-n{color:#F2EFE8 !important;}
+.num{background:var(--neu-bg);color:var(--navy);box-shadow:var(--neu-in-sm);}
+.step .n{background:var(--navy);}
+.stat-n{color:var(--navy);}
+ul.pts li::before{background:var(--taupe);}
+ul.pts li b,.card b{color:var(--navy);}
+.tag{box-shadow:var(--neu-out-sm);background:var(--neu-bg) !important;}
+.tag.gold{color:var(--taupe);} .tag.ok{color:var(--leaf);} .tag.no{color:var(--key);}
+.prodcard .role{background:var(--neu-bg);border:0;box-shadow:var(--neu-in-sm);color:var(--taupe);}
+.prodcard dt{color:var(--taupe);}
+
+/* 안내 박스 — 눌린 면 */
+.callout{background:var(--neu-bg);border:0;box-shadow:var(--neu-in);border-radius:1em;color:var(--sub);}
+.callout b{color:var(--navy);}
+.callout.red{background:#FBF3E4;box-shadow:var(--neu-in-sm);color:#8C5A3C;}
+.callout.red b{color:var(--key);}
+.todo{background:var(--neu-bg);box-shadow:var(--neu-in);border:0;}
+.gs-note{background:#FBF3E4;box-shadow:var(--neu-in-sm);}
+.gs-note b{color:#8C5A3C;}
+
+/* 표 */
+table.t,table.cmp{border-radius:1.2em;overflow:hidden;}
+table.t th{background:var(--navy);}
+table.t td,table.cmp td{border-top:1px solid var(--line);}
+table.t td.hl{background:#F1E4DF;color:var(--key);}
+table.t td.bl{color:var(--blue);}
+table.t tr.sum td{background:#DDD8CF;color:var(--navy);}
+table.cmp th.x{background:var(--key);} table.cmp th.o{background:var(--leaf);}
+table.cmp td:first-child{color:var(--key);} table.cmp td:last-child{color:var(--leaf);}
+
+/* 시작하기 카드 */
+.gs-step{background:var(--neu-bg);border:0;box-shadow:var(--neu-in-sm);color:var(--taupe);}
+.gs-step b{color:var(--taupe);}
+.gs-card.first .gs-step,.gs-card.first .gs-step b{color:var(--key);}
+.gs-pill{background:var(--neu-bg);border:0;box-shadow:var(--neu-out-sm);}
+.gs-card.first .gs-pill{color:var(--key);}
+.gs-go{box-shadow:var(--neu-out-sm);}
+.gs-card.first .gs-go{background:var(--key);}
+a.gs-card:hover{box-shadow:.7em .7em 1.4em var(--neu-dark),-.7em -.7em 1.4em var(--neu-light);}
+
+/* 파트너 · 전후 */
+.partners figure.me{box-shadow:var(--neu-out),0 0 0 .18em var(--key);}
+.ba figure.after figcaption{background:var(--key);}
+.ba figcaption{background:rgba(31,58,92,.88);}
+
+/* 진행 컨트롤 */
+.card.navy table.t{background:rgba(255,255,255,.07);box-shadow:none;}
+.card.navy table.t td{color:#F2EFE8;border-top-color:rgba(255,255,255,.14);}
+.card.navy table.t tr.sum td{background:rgba(255,255,255,.16);color:#fff;}
+#bar{background:var(--key);}
+#ctl button,#ctl select,#ctl span{background:rgba(31,58,92,.92);}
+#hint{background:rgba(31,58,92,.94);}
 </style>
 </head>
 <body>
@@ -972,7 +1069,7 @@
   <h1 style="margin-top:.3em">가격 구성</h1>
   <div class="rule"></div>
   <div class="sub" style="font-size:1.35em">닥터배 국내 에스테틱 공급가 · 전문점 구성</div>
-  <div class="sub" style="font-size:1em;margin-top:1.4em;color:var(--gold-lt)">올바른 에스테틱 유통 문화를 위해 — 공유 및 온라인 / 오프라인 노출 금지</div>
+  <div class="sub" style="font-size:1em;margin-top:1.4em;color:var(--key);font-weight:700">올바른 에스테틱 유통 문화를 위해 — 공유 및 온라인 / 오프라인 노출 금지</div>
   <div class="sec-num">07</div>
 </section>
 
