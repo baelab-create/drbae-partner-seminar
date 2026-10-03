@@ -416,6 +416,11 @@ table.t td .pi{background:#fff;border-radius:.4em;padding:.15em .3em;box-shadow:
 .cmp-row > .card > .tag{align-self:flex-start;}
 .grid > .card,.grid > .prodcard{height:100%;}
 .ptn-sub figure{align-self:stretch;}
+
+/* 사진 여백(레터박스) 제거 — 박스가 아니라 사진 자체에 둥근 모서리 · 그림자 */
+.imgbox:not(.cover){background:transparent !important;box-shadow:none !important;border-radius:0;overflow:visible;}
+.imgbox:not(.cover) img{width:auto !important;height:auto !important;max-width:100%;max-height:100%;object-fit:contain;border-radius:1.2em;box-shadow:var(--neu-out);background:#fff;}
+.imgbox.plain img{box-shadow:none;background:transparent;border-radius:0;}
 </style>
 </head>
 <body>
