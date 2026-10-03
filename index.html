@@ -440,6 +440,11 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
 .tl > div{display:flex;gap:1em;align-items:center;background:var(--neu-bg);border-radius:.9em;box-shadow:var(--neu-out-sm);padding:.6em 1em;}
 .tl b{flex:0 0 4.6em;color:var(--key);font-weight:900;}
 .tl span{color:var(--ink);font-size:.95em;}
+
+/* 우측 상단 닥터배 로고 (네이비 단색) */
+.brand-logo{position:absolute;top:1.6em;right:2.2em;width:9.4em;height:2.57em;background:var(--navy);-webkit-mask:url(assets/logo/logo-drbae.png) center/contain no-repeat;mask:url(assets/logo/logo-drbae.png) center/contain no-repeat;opacity:.9;pointer-events:none;z-index:3;}
+/* 전후 사진 — 좌하단 Dr.BAE 워터마크가 잘리지 않도록 */
+.ba img{object-position:left bottom;}
 </style>
 </head>
 <body>
@@ -1370,6 +1375,7 @@ html,body{overflow:hidden;touch-action:pan-x pan-y;}
   document.querySelectorAll('.prodcard').forEach(c => { const m = c.querySelector('img')?.src.match(/prod\/(\w+)\./); if (m && document.querySelector('[data-pd-body="'+m[1]+'"]')) c.dataset.pd = m[1]; });
   document.querySelectorAll('[data-pd]').forEach(el => el.addEventListener('click', e => { e.stopPropagation(); openPd(el.dataset.pd); }));
   pdm.addEventListener('click', e => { if (e.target === pdm || e.target.closest('.pd-x')) closePd(); });
+  slides.forEach(s => { if (!s.classList.contains('img')) s.insertAdjacentHTML('beforeend','<div class="brand-logo" aria-hidden="true"></div>'); });
   let cur = 0;
   function go(n) {
     cur = Math.max(0, Math.min(slides.length - 1, n));
