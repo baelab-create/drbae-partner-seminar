@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 스마트폰 · 태블릿에서도 반응형 없이 데스크톱 16:9 레이아웃을 그대로 축소 표시 -->
 <title>닥터배 파트너 세미나 자료</title>
 <meta name="description" content="닥터배 파트너 원장님 세미나 발표 자료 — 16:9 화면용 슬라이드">
 <meta property="og:type" content="website">
@@ -421,6 +422,19 @@ table.t td .pi{background:#fff;border-radius:.4em;padding:.15em .3em;box-shadow:
 .imgbox:not(.cover){background:transparent !important;box-shadow:none !important;border-radius:0;overflow:visible;}
 .imgbox:not(.cover) img{width:auto !important;height:auto !important;max-width:100%;max-height:100%;object-fit:contain;border-radius:1.2em;box-shadow:var(--neu-out);background:#fff;}
 .imgbox.plain img{box-shadow:none;background:transparent;border-radius:0;}
+
+/* ===== 16:9 고정 무대 — 어떤 기기에서도 1280×720 레이아웃을 그대로 축소/확대 (반응형 없음) ===== */
+#deck{position:fixed;inset:auto;left:50%;top:50%;width:1280px;height:720px;display:block;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center center;}
+.slide{width:1280px !important;height:720px !important;left:0;top:0;font-size:16.384px !important;}
+html,body{overflow:hidden;touch-action:pan-x pan-y;}
+
+/* 26 언론 슬라이드 핵심 메시지 */
+.press-msg{margin-top:.5em;background:var(--neu-bg);border-radius:1.4em;box-shadow:var(--neu-in);padding:1.1em 1.6em;}
+.pm-sub{font-size:1.05em;color:var(--sub);}
+.pm-sub b{color:var(--ink);text-decoration:line-through;text-decoration-color:var(--key);text-decoration-thickness:.12em;}
+.slide h2.pm-main{font-size:2.15em;line-height:1.35;margin-top:.3em;color:var(--navy);}
+.pm-main em{font-style:normal;color:var(--key);}
+.pm-cards{display:flex;flex-direction:column;gap:.7em;justify-content:center;height:100%;}
 </style>
 </head>
 <body>
@@ -485,13 +499,18 @@ table.t td .pi{background:#fff;border-radius:.4em;padding:.15em .3em;box-shadow:
 </section>
 
 <section class="slide" data-ch="01 닥터배 · 배랩">
-  <div class="eyebrow">PRESS</div>
-  <h2>JTBC · KBS · MBC · YTN — 메이저 뉴스가 다룬 기술</h2>
-  <div class="imgbox" style="flex:1;min-height:0;margin-top:1em"><img src="assets/img/news.jpg" alt="배원규 교수 뉴스 보도 화면"></div>
-  <div class="grid g3" style="margin-top:1em">
-    <div class="card tight"><h3>문제 제기</h3><p>“기능성 성분 — 구조물의 크기가 커서 각질 통과 불가”</p></div>
-    <div class="card tight"><h3>연구 원리 보도</h3><p>“독사가 독 전달하는 원리로 흡수율을 증가” — YTN 사이언스 · JTBC · 아리랑뉴스 · 포브스코리아</p></div>
-    <div class="card tight navy"><h3>고객에게 한 문장</h3><p>“뉴스에 나온 연구실이 직접 만든 브랜드”</p></div>
+  <div class="eyebrow">PRESS · WHY IT MADE THE NEWS</div>
+  <div class="press-msg">
+    <p class="pm-sub">많은 디바이스 회사들이 ‘피부 흡수’를 이야기합니다. 하지만 그것은 대부분 <b>마케팅 컨셉</b>일 뿐입니다.</p>
+    <h2 class="pm-main">닥터배는 <em>실제 임상</em>과 <em>세계적인 논문</em>으로<br>검증받은 기술이기에, <em>언론이 보도</em>했습니다.</h2>
+  </div>
+  <div class="split hero" style="margin-top:1em">
+    <div class="imgbox"><img src="assets/img/news.jpg" alt="배원규 교수 뉴스 보도 화면"></div>
+    <div class="pm-cards">
+      <div class="card tight"><span class="tag gold">VERIFIED</span><h3 style="margin-top:.4em">Science Translational Medicine 2019 표지 논문</h3></div>
+      <div class="card tight"><span class="tag gold">PRESS</span><h3 style="margin-top:.4em">JTBC · KBS · MBC · YTN · 아리랑 · 포브스코리아</h3></div>
+      <div class="card tight navy"><h3>고객에게 한 문장</h3><p>“광고가 아니라, 뉴스에 나온 연구실이 직접 만든 브랜드입니다.”</p></div>
+    </div>
   </div>
 </section>
 
@@ -1308,7 +1327,7 @@ table.t td .pi{background:#fff;border-radius:.4em;padding:.15em .3em;box-shadow:
   <button id="next" title="다음 (→)">▶</button>
   <button id="fs" title="전체 화면 (F)">⛶ 전체화면</button>
 </div>
-<div id="hint">← → 키 · 클릭으로 넘기기 · F 전체 화면</div>
+<div id="hint">← → 키 · 클릭(스마트폰은 좌우 스와이프)으로 넘기기 · F 전체 화면</div>
 
 <script>
   // 이정은 원장 원본 자료 21장을 수정 없이 그대로 삽입
@@ -1400,7 +1419,8 @@ table.t td .pi{background:#fff;border-radius:.4em;padding:.15em .3em;box-shadow:
   document.getElementById('fs').onclick = toggleFs;
   setTimeout(() => document.getElementById('hint').style.opacity = 0, 3500);
 
-  addEventListener('resize', () => fit(slides[cur]));
+  function stage(){ document.getElementById('deck').style.setProperty('--s', Math.min(innerWidth/1280, innerHeight/720)); }
+  stage(); addEventListener('resize', stage); addEventListener('orientationchange', () => setTimeout(stage, 200));
   document.fonts?.ready.then(() => { slides.forEach(s => delete s.dataset.fit); fit(slides[cur]); });
   go((parseInt(location.hash.slice(1)) || 1) - 1);
 </script>
