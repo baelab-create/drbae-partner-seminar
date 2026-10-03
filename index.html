@@ -408,6 +408,14 @@ table.t td .pi{background:#fff;border-radius:.4em;padding:.15em .3em;box-shadow:
 .ptn-link i,.ptn-branches::before{opacity:.9;background:var(--navy);}
 .ptn-foot{font-size:.82em;color:var(--sub);margin-top:.7em;}
 .ptn-foot b{color:var(--navy);}
+
+/* 같은 줄의 카드는 항상 같은 크기 */
+.cmp-row{align-items:stretch !important;}
+.cmp-row > .card,.cmp-row > .prodcard{height:auto;}
+.cmp-row > .card{display:flex;flex-direction:column;justify-content:center;}
+.cmp-row > .card > .tag{align-self:flex-start;}
+.grid > .card,.grid > .prodcard{height:100%;}
+.ptn-sub figure{align-self:stretch;}
 </style>
 </head>
 <body>
